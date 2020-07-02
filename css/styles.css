@@ -172,9 +172,8 @@ a.nav-link:active{
     color: grey;
 }
 
-@media screen and (width: 411px){
+@media screen and (max-width: 411px) {
     body{
-        width: 411px;
         padding: 0px;
     }
 
@@ -234,6 +233,7 @@ a.nav-link:active{
     .phone {
         display: flex;
         margin-top: -20px;
+        margin-right: 9px;
     }
 
 
