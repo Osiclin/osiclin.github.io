@@ -10,8 +10,8 @@ body{
     padding-left: 6%;
     padding-right: 6%;
 }
-/*header content*/
 
+/*header content*/
 header{
     background-color: black;
     position: fixed;
@@ -93,8 +93,6 @@ a.nav-link:active{
     width: 100%;
     margin-top: 100px;
 }
-
-
 /*end header*/
 
 /*content of page*/
@@ -131,11 +129,11 @@ a.nav-link:active{
 }
 
 .msg1{
-    margin-left: -15px;
+    margin-left: 30px;
 }
 
 .msg2{
-    margin-left: -39px;
+    margin-left: 1px;
 }
 
 .msg3{
@@ -143,7 +141,7 @@ a.nav-link:active{
 }
 
 .giftomsg{
-    width: 100%;
+    margin-left: 100px;
 }
 
 .smw{
@@ -158,8 +156,10 @@ a.nav-link:active{
 }
 
 .button{
-    margin-left: 500px;
-    margin-top: 50px;
+    background: red;
+    width: 90%;
+    text-align: center;
+    margin: 70px;
 }
 
 .msgbutton{
@@ -194,6 +194,19 @@ footer{
 }
 
 @media screen and (max-width: 411px) {
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Acme', sans-serif;
+        font-weight: 100;
+    }
+
+    body{
+        background-color: black;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     header{
         background-color: black;
         position: fixed;
@@ -232,6 +245,10 @@ footer{
         margin-left: 80px;  
     }
 
+    .giftomsg{
+        margin-left: 30px;
+    }
+
     .mypics{
         width: 200px;
         height: 200px;
@@ -257,7 +274,7 @@ footer{
         margin-bottom: 50px;
         font-size: 16px;
         color: white;
-        text-shadow: 1px 1px hsl(175, 49%, 44%);
+        text-shadow: 1px 0.px hsl(175, 49%, 44%);
     }
 
     .msg2{
@@ -334,13 +351,208 @@ footer{
     footer{
         font-size: 14px;
         width: 100%;
-        position: absolute;
+        position: relative;
         left: 30px;
-        bottom: 0px;
+        bottom: 9px;
         color: white;
         text-align: center;
         margin-left: -30px;
         background-color: black;
     }
 
+}@media screen and (max-width: 1024px) {
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Acme', sans-serif;
+        font-weight: 500;
+    }
+    
+    body{
+        background-color: black;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    
+    /*header content*/
+    header{
+        background-color: black;
+        position: fixed;
+        top: 0px;
+        right: 81px;
+        left: 81px;
+        z-index: 0;
+        border-bottom: 2px solid lightblue;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1%;
+    }
+    
+    strong{
+        font-size: 1.5vw;
+        font-style: italic;
+        color: grey;
+    }
+    
+    .phone>a:link{
+        text-decoration: none;
+    }
+    
+    .phone .fa-phone-square-alt, .phone .fa-twitter-square, .phone .fa-facebook-square, .phone .fa-instagram-square, .phone .fa-at{
+        color: hsl(175, 49%, 44%);
+        margin-bottom: 5px;
+    }
+    
+    .logo{
+        width: 50px;
+        margin-left: 15px;
+    }
+    
+    ul li.active a{
+        color: hsl(175, 49%, 44%);
+    }
+    
+    li>a:link{
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    
+    ul>li{
+        list-style-type: none;
+        display: inline;
+    }
+    
+    .nav-links{
+        padding-top: 10%;
+    }
+    
+    .nav-link{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav-links>li>a{
+        margin-right: 20px;
+    }
+    
+    .nav-link:hover{
+        color:white;
+        transition: 1s;
+        background-color: hsl(175, 49%, 44%);
+        padding: 4px;
+        border-radius: 2px;
+    }
+    
+    strong:hover{
+        color: lightblue;
+        transition: 1s;
+    }
+    
+    a.nav-link:active{
+        font-size: small;
+    }
+    
+    .content{
+        width: 100%;
+        margin-top: 100px;
+    }
+    /*end header*/
+    
+    /*content of page*/
+    .phone {
+        margin-top: 2%;
+        color:hsl(175, 49%, 44%);
+        float: right;
+        padding-right: 2%;
+        margin-left: -20%;
+    }
+    
+    .gifcode{
+        width: 25%;
+        margin-top: 2%;
+        margin-left: 5%;  
+    }
+    
+    .mypics{
+        background-color: black;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50vw;
+        margin-top: -11%;
+        margin-left: 8%;
+        border: 2px solid hsl(175, 49%, 44%);
+    }
+    
+    #msg{
+        text-shadow: 1px 0.5px blue;
+        margin-top: -100px;
+        margin-left: 390px;
+        font-size: 20px;
+        color: white;
+    }
+    
+    .msg1{
+        margin-left: -115px;
+    }
+    
+    .msg2{
+        margin-left: -140px;
+    }
+    
+    .msg3{
+        margin-left: -290px;
+    }
+    
+    .giftomsg{
+        margin-left: 60px;
+    }
+    
+    .smw{
+        padding: 5px 50px 5px 50px;
+        background-color: hsl(175, 49%, 44%);
+        text-decoration: none;
+        font-size: 20px;
+        border: 0px;
+        border-radius: 10px;
+        color: white;
+        box-shadow: 0.5px 0.5px 5px 1px white;
+    }
+    
+    .button{
+        background: red;
+        width: 85%;
+        text-align: center;
+        margin: 70px;
+    }
+    
+    .msgbutton{
+        margin-top: -13%;
+    }
+    
+    .imgcss{
+        width: 20%;
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        opacity: 0.05;
+    }
+    
+    .serv{
+        font-size: 700%;
+        font-weight: 100;
+        text-align: center;
+        margin-top: 15%;
+        color: grey;
+    }
+    
+    footer{
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        font-size: 16px;
+        bottom: 0px;
+        color: white;
+        text-align: center;
+        margin-top: 100px;
+    }
 }
