@@ -41,7 +41,7 @@ strong{
 }
 
 .logo{
-    width: 60px;
+    width: 50px;
     margin-left: 15px;
 }
 
@@ -113,6 +113,7 @@ a.nav-link:active{
 }
 
 .mypics{
+    background-color: black;
     width: 20vw;
     height: 20vw;
     border-radius: 50vw;
@@ -143,7 +144,6 @@ a.nav-link:active{
 
 .giftomsg{
     width: 100%;
-    
 }
 
 .smw{
@@ -154,6 +154,7 @@ a.nav-link:active{
     border: 0px;
     border-radius: 10px;
     color: white;
+    box-shadow: 0.5px 0.5px 5px 1px white;
 }
 
 .button{
@@ -183,15 +184,16 @@ a.nav-link:active{
 
 footer{
     width: 100%;
-    left: 0px;
     position: absolute;
+    left: 0px;
+    font-size: 16px;
+    bottom: 0px;
     color: white;
     text-align: center;
     margin-top: 100px;
-    background-color: red;
 }
 
-@media only screen and (max-width: 411px) {
+@media screen and (max-width: 411px) {
     header{
         background-color: black;
         position: fixed;
@@ -206,13 +208,18 @@ footer{
     }
 
     body{
-        height: 780px;
+        height: 740px;
         max-width: 411px;
         padding: 0px;
     }
 
     .logo{
-        width: 60px;
+        width: 50px;
+    }
+
+    li>a:link{
+        text-transform: uppercase;
+        font-size: 16px;
     }
 
     .nav-links{
@@ -254,17 +261,17 @@ footer{
     }
 
     .msg2{
-        width: 125px;
+        width: 344px;
         margin-left: 10px;
     }
 
     .msg1{
-        width: 39px;
+        width: 344px;
         margin-left: 10px;
     }
 
     .msg3{
-        width: 285px;
+        width: 344px;
         margin-left: 10px;
     }
     
@@ -315,26 +322,25 @@ footer{
         border: 0px;
         border-radius: 10px;
         color: black;
-        
+        box-shadow: 0.5px 0.5px 5px 1px white;   
     }
     
     .button{
-        max-width: 212.19px;
-        margin-left: 100px;
-        margin-top: 60px;
-        margin-bottom: 50px;
+        width: 100%;
+        margin: 60px auto 50px 0px;
+        text-align: center;
     }
 
     footer{
+        font-size: 14px;
         width: 100%;
-        background-color: red;
         position: absolute;
         left: 30px;
-        top: 740px;
+        bottom: 0px;
         color: white;
         text-align: center;
-        margin-top: 10px;
         margin-left: -30px;
+        background-color: black;
     }
 
 }
