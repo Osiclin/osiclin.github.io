@@ -348,6 +348,14 @@ footer{
         text-align: center;
     }
 
+    .serv{
+        font-size: 16px;
+        font-weight: 100;
+        text-align: center;
+        margin-top: 50%;
+        color: grey;
+    }
+
     footer{
         font-size: 14px;
         width: 100%;
@@ -538,7 +546,6 @@ footer{
     }
     
     .serv{
-        font-size: 700%;
         font-weight: 100;
         text-align: center;
         margin-top: 15%;
@@ -568,7 +575,9 @@ footer{
     body{
         background-color: black;
         padding-left: 0px;
-        padding-right: 0px;
+        padding: 0px;
+        max-width: 411px;
+        font-size: 16px;
     }
 
     header{
@@ -582,11 +591,6 @@ footer{
         display: flex;
         justify-content: space-between;
         padding-top: 1%;
-    }
-
-    body{
-        max-width: 411px;
-        padding: 0px;
     }
 
     .logo{
@@ -709,6 +713,14 @@ footer{
         width: 100%;
         margin: 60px auto 50px 0px;
         text-align: center;
+    }
+
+    .serv{
+        font-size: 50px;
+        font-weight: 100;
+        text-align: center;
+        margin-top: 50%;
+        color: grey;
     }
 
     footer{
