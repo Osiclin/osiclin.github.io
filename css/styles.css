@@ -156,7 +156,6 @@ a.nav-link:active{
 }
 
 .button{
-    background: red;
     width: 90%;
     text-align: center;
     margin: 70px;
@@ -527,7 +526,6 @@ footer{
     }
     
     .button{
-        background: red;
         width: 85%;
         text-align: center;
         margin: 70px;
