@@ -556,3 +556,170 @@ footer{
         margin-top: 100px;
     }
 }
+
+@media screen and (max-width: 425px) {
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Acme', sans-serif;
+        font-weight: 100;
+    }
+
+    body{
+        background-color: black;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    header{
+        background-color: black;
+        position: fixed;
+        top: 0px;
+        right: 11px;
+        left: 11px;
+        z-index: 0;
+        border-bottom: 2px solid lightblue;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1%;
+    }
+
+    body{
+        max-width: 411px;
+        padding: 0px;
+    }
+
+    .logo{
+        width: 50px;
+    }
+
+    li>a:link{
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    .nav-links{
+        margin-left: 20px;
+    }
+
+    .gifcode{
+        width: 250px;
+        margin-top: 20px;
+        margin-left: 80px;  
+    }
+
+    .giftomsg{
+        margin-left: 30px;
+    }
+
+    .mypics{
+        width: 200px;
+        height: 200px;
+        margin-top: -110px;
+        border-radius: 50vw;
+        margin-left: 100px;
+        border: 2px solid hsl(175, 49%, 44%);
+    }
+
+    .imgcss{
+        display: none;
+    }
+
+    .msgbutton{
+        margin-top: -150px;
+    }
+
+    #msg{
+        max-width: 360px;
+        line-height: 33px;
+        margin-top: 8px;
+        margin-left: 25px;
+        margin-bottom: 50px;
+        font-size: 16px;
+        color: white;
+        text-shadow: 1px 0.px hsl(175, 49%, 44%);
+    }
+
+    .msg2{
+        width: 344px;
+        margin-left: 10px;
+    }
+
+    .msg1{
+        width: 344px;
+        margin-left: 10px;
+    }
+
+    .msg3{
+        width: 344px;
+        margin-left: 10px;
+    }
+    
+    .phone {
+        display: flex;
+        margin-top: -20px;
+        margin-right: 9px;
+    }
+
+    .phone .fa-phone-square-alt{
+        font-size: 25px;
+        color: hsl(175, 49%, 44%);
+        margin-right: 6px;
+    }
+
+    .phone .fa-twitter-square{
+        font-size: 25px;
+        color: hsl(175, 49%, 44%);
+        margin-right: 6px;
+    }
+
+    .phone .fa-instagram-square{
+        font-size: 25px;
+        color: hsl(175, 49%, 44%);
+        margin-right: 6px;
+    }
+
+    .phone .fa-facebook-square{
+        font-size: 25px;
+        color: hsl(175, 49%, 44%);
+        margin-right: 6px;
+    }
+
+    .phone .fa-at{
+        font-size: 25px;
+        color: hsl(175, 49%, 44%);
+    }
+
+    strong{
+        display: none;
+    }
+
+    .smw{
+        padding: 5px 50px 5px 50px;
+        background-color: hsl(175, 49%, 44%);
+        text-decoration: none;
+        font-size: 20px;
+        border: 0px;
+        border-radius: 10px;
+        color: black;
+        box-shadow: 0.5px 0.5px 5px 1px white;   
+    }
+    
+    .button{
+        width: 100%;
+        margin: 60px auto 50px 0px;
+        text-align: center;
+    }
+
+    footer{
+        font-size: 14px;
+        width: 100%;
+        position: relative;
+        left: 30px;
+        bottom: 9px;
+        color: white;
+        text-align: center;
+        margin-left: -30px;
+        background-color: black;
+    }
+}
