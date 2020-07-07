@@ -184,8 +184,9 @@ a.nav-link:active{
 footer{
     width: 100%;
     min-width: 1366px;
-    position: absolute;
+    position: fixed;
     left: 0px;
+    bottom: 0px;
     font-size: 16px;
     bottom: 0px;
     color: white;
@@ -384,7 +385,8 @@ footer{
     footer{
         width: 425px;
         min-width: 0px;
-        position: absolute;
+        position: fixed;
+        left: 0px;
         bottom: 0px;
         font-size: 16px;
         bottom: 0px;
