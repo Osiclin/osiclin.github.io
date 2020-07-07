@@ -202,14 +202,15 @@ footer{
     }
 
     body{
-        min-width: 450px;
-        max-width: 450px;
+        min-width: 0px;
+        max-width: 425px;
         background-color: black;
     }
     
     /*header content*/
     header{
-        min-width: 400px;
+        width: 425px;
+        min-width: 0px;
         background-color: black;
         position: fixed;
         top: 0px;
@@ -286,6 +287,8 @@ footer{
     }
     
     .content{
+        width: 425px;
+        margin: 0px;
         margin-top: 70px;
     }
     /*end header*/
@@ -301,6 +304,8 @@ footer{
         float: none;
         position: absolute;
         left: 250px;
+        padding-right: 0px;
+
     }
     
     .gifcode{
