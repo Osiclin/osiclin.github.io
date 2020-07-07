@@ -6,27 +6,28 @@
 }
 
 body{
+    min-width: 1366px;
+    max-width: 100%;
     background-color: black;
-    padding-left: 6%;
-    padding-right: 6%;
 }
 
 /*header content*/
 header{
+    min-width: 1240px;
     background-color: black;
     position: fixed;
     top: 0px;
-    right: 81px;
-    left: 81px;
-    z-index: 0;
+    right: 60px;
+    left: 60px;
+    z-index: 1;
     border-bottom: 2px solid lightblue;
     display: flex;
     justify-content: space-between;
-    padding-top: 1%;
+    padding-top: 2px;
 }
 
 strong{
-    font-size: 1.5vw;
+    font-size: 1.25rem;
     font-style: italic;
     color: grey;
 }
@@ -42,7 +43,7 @@ strong{
 
 .logo{
     width: 50px;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 ul li.active a{
@@ -51,7 +52,6 @@ ul li.active a{
 
 li>a:link{
     text-transform: uppercase;
-    font-size: 20px;
 }
 
 ul>li{
@@ -60,7 +60,7 @@ ul>li{
 }
 
 .nav-links{
-    padding-top: 10%;
+    padding-top: 9%;
 }
 
 .nav-link{
@@ -70,6 +70,7 @@ ul>li{
 
 .nav-links>li>a{
     margin-right: 20px;
+    font-size: 20px;
 }
 
 .nav-link:hover{
@@ -90,87 +91,86 @@ a.nav-link:active{
 }
 
 .content{
-    width: 100%;
     margin-top: 100px;
 }
 /*end header*/
 
 /*content of page*/
+.css{
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    left: 620px;
+    opacity: 0.06;
+}
+
 .phone {
-    margin-top: 2%;
     color:hsl(175, 49%, 44%);
     float: right;
-    padding-right: 2%;
-    margin-left: -20%;
+    padding-right: 110px;
 }
 
 .gifcode{
-    width: 25%;
-    margin-top: 2%;
-    margin-left: 5%;  
+    width: 350px;
+    margin-top: 30px;
+    margin-left: 90px;
 }
 
 .mypics{
     background-color: black;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50vw;
-    margin-top: -11%;
-    margin-left: 8%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 230px;
+    left: 160px;
     border: 2px solid hsl(175, 49%, 44%);
 }
 
 #msg{
-    text-shadow: 1px 0.5px blue;
-    margin-top: -155px;
-    margin-left: 390px;
+    line-height: 67px;
+    margin-top: -40px;
+    margin-left: 425px;
     font-size: 30px;
     color: white;
 }
 
 .msg1{
-    margin-left: 30px;
+    margin-left: -12px;
 }
 
 .msg2{
-    margin-left: 1px;
+    margin-left: -30px;
 }
 
 .msg3{
-    margin-left: -290px;
-}
-
-.giftomsg{
-    margin-left: 100px;
+    margin-left: -280px;
 }
 
 .smw{
+    width: 100%;
     padding: 5px 50px 5px 50px;
     background-color: hsl(175, 49%, 44%);
     text-decoration: none;
     font-size: 20px;
     border: 0px;
     border-radius: 10px;
-    color: white;
-    box-shadow: 0.5px 0.5px 5px 1px white;
+    color: black;
+    box-shadow: 3px 3px 0px white;
 }
 
 .button{
-    width: 90%;
+    min-width: 1366px;
+    margin: 50px 0px 50px 0px;
     text-align: center;
-    margin: 70px;
+}
+
+.smw:active{
+    box-shadow: 1px 1px 0px white;
 }
 
 .msgbutton{
     margin-top: -13%;
-}
-
-.imgcss{
-    width: 20%;
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    opacity: 0.05;
 }
 
 .serv{
@@ -183,6 +183,7 @@ a.nav-link:active{
 
 footer{
     width: 100%;
+    min-width: 1366px;
     position: absolute;
     left: 0px;
     font-size: 16px;
@@ -190,378 +191,6 @@ footer{
     color: white;
     text-align: center;
     margin-top: 100px;
-}
-
-@media screen and (max-width: 411px) {
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: 'Acme', sans-serif;
-        font-weight: 100;
-    }
-
-    body{
-        background-color: black;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    header{
-        background-color: black;
-        position: fixed;
-        top: 0px;
-        right: 11px;
-        left: 11px;
-        z-index: 0;
-        border-bottom: 2px solid lightblue;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 1%;
-    }
-
-    body{
-        height: 740px;
-        max-width: 411px;
-        padding: 0px;
-    }
-
-    .logo{
-        width: 50px;
-    }
-
-    li>a:link{
-        text-transform: uppercase;
-        font-size: 16px;
-    }
-
-    .nav-links{
-        margin-left: 20px;
-    }
-
-    .gifcode{
-        width: 250px;
-        margin-top: 20px;
-        margin-left: 80px;  
-    }
-
-    .giftomsg{
-        margin-left: 30px;
-    }
-
-    .mypics{
-        width: 200px;
-        height: 200px;
-        margin-top: -110px;
-        border-radius: 50vw;
-        margin-left: 100px;
-        border: 2px solid hsl(175, 49%, 44%);
-    }
-
-    .imgcss{
-        display: none;
-    }
-
-    .msgbutton{
-        margin-top: -150px;
-    }
-
-    #msg{
-        max-width: 360px;
-        line-height: 33px;
-        margin-top: 8px;
-        margin-left: 25px;
-        margin-bottom: 50px;
-        font-size: 16px;
-        color: white;
-        text-shadow: 1px 0.px hsl(175, 49%, 44%);
-    }
-
-    .msg2{
-        width: 344px;
-        margin-left: 10px;
-    }
-
-    .msg1{
-        width: 344px;
-        margin-left: 10px;
-    }
-
-    .msg3{
-        width: 344px;
-        margin-left: 10px;
-    }
-    
-    .phone {
-        display: flex;
-        margin-top: -20px;
-        margin-right: 9px;
-    }
-
-    .phone .fa-phone-square-alt{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-twitter-square{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-instagram-square{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-facebook-square{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-at{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-    }
-
-    strong{
-        display: none;
-    }
-
-    .smw{
-        padding: 5px 50px 5px 50px;
-        background-color: hsl(175, 49%, 44%);
-        text-decoration: none;
-        font-size: 20px;
-        border: 0px;
-        border-radius: 10px;
-        color: black;
-        box-shadow: 0.5px 0.5px 5px 1px white;   
-    }
-    
-    .button{
-        width: 100%;
-        margin: 60px auto 50px 0px;
-        text-align: center;
-    }
-
-    .serv{
-        font-size: 16px;
-        font-weight: 100;
-        text-align: center;
-        margin-top: 50%;
-        color: grey;
-    }
-
-    footer{
-        font-size: 14px;
-        width: 100%;
-        position: relative;
-        left: 30px;
-        bottom: 9px;
-        color: white;
-        text-align: center;
-        margin-left: -30px;
-        background-color: black;
-    }
-
-}
-
-@media screen and (max-width: 1024px) {
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: 'Acme', sans-serif;
-        font-weight: 500;
-    }
-    
-    body{
-        background-color: black;
-        padding-left: 6%;
-        padding-right: 6%;
-    }
-    
-    /*header content*/
-    header{
-        background-color: black;
-        position: fixed;
-        top: 0px;
-        right: 81px;
-        left: 81px;
-        z-index: 0;
-        border-bottom: 2px solid lightblue;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 1%;
-    }
-    
-    strong{
-        font-size: 2.3vw;
-        font-style: italic;
-        color: grey;
-    }
-    
-    .phone>a:link{
-        text-decoration: none;
-    }
-    
-    .phone .fa-phone-square-alt, .phone .fa-twitter-square, .phone .fa-facebook-square, .phone .fa-instagram-square, .phone .fa-at{
-        color: hsl(175, 49%, 44%);
-        margin-bottom: 10px;
-    }
-    
-    .logo{
-        width: 50px;
-        margin-left: 15px;
-    }
-    
-    ul li.active a{
-        color: hsl(175, 49%, 44%);
-    }
-    
-    li>a:link{
-        text-transform: uppercase;
-        font-size: 20px;
-    }
-    
-    ul>li{
-        list-style-type: none;
-        display: inline;
-    }
-    
-    .nav-links{
-        padding-top: 10%;
-    }
-    
-    .nav-link{
-        text-decoration: none;
-        color: white;
-    }
-    
-    .nav-links>li>a{
-        margin-right: 20px;
-    }
-    
-    .nav-link:hover{
-        color:white;
-        transition: 1s;
-        background-color: hsl(175, 49%, 44%);
-        padding: 4px;
-        border-radius: 2px;
-    }
-    
-    strong:hover{
-        color: lightblue;
-        transition: 1s;
-    }
-    
-    a.nav-link:active{
-        font-size: small;
-    }
-    
-    .content{
-        width: 100%;
-        margin-top: 100px;
-    }
-    /*end header*/
-    
-    /*content of page*/
-    .phone {
-        margin-top: -2%;
-        color:hsl(175, 49%, 44%);
-        float: right;
-        padding-right: 7%;
-        margin-left: -20%;
-    }
-    
-    .gifcode{
-        width: 40%;
-        margin-top: 5%;
-        margin-left: 3%;  
-    }
-    
-    .mypics{
-        background-color: black;
-        width: 25vw;
-        height: 25vw;
-        border-radius: 50vw;
-        margin-top: -17%;
-        margin-left: 7%;
-        border: 2px solid hsl(175, 49%, 44%);
-    }
-    
-    #msg{
-        text-shadow: 1px 0.5px blue;
-        margin-top: -120px;
-        margin-left: 390px;
-        font-size: 24px;
-        color: white;
-    }
-    
-    .msg1{
-        margin-left: -70px;
-    }
-    
-    .msg2{
-        margin-left: -100px;
-    }
-    
-    .msg3{
-        margin-left: -317px;
-    }
-    
-    .giftomsg{
-        margin-left: 2px;
-    }
-    
-    .smw{
-        padding: 5px 50px 5px 50px;
-        background-color: hsl(175, 49%, 44%);
-        text-decoration: none;
-        font-size: 20px;
-        border: 0px;
-        border-radius: 10px;
-        color: white;
-        box-shadow: 0.5px 0.5px 5px 1px white;
-    }
-    
-    .button{
-        width: 85%;
-        text-align: center;
-        margin: 70px;
-    }
-    
-    .msgbutton{
-        margin-top: -13%;
-    }
-    
-    .imgcss{
-        width: 20%;
-        position: fixed;
-        top: 20%;
-        left: 50%;
-        opacity: 0.05;
-    }
-    
-    .serv{
-        font-weight: 100;
-        text-align: center;
-        margin-top: 15%;
-        color: grey;
-    }
-    
-    footer{
-        width: 100%;
-        position: absolute;
-        left: 0px;
-        font-size: 16px;
-        bottom: 0px;
-        color: white;
-        text-align: center;
-        margin-top: 100px;
-    }
 }
 
 @media screen and (max-width: 425px) {
@@ -573,546 +202,28 @@ footer{
     }
 
     body{
+        min-width: 450px;
+        max-width: 450px;
         background-color: black;
-        padding-left: 0px;
-        padding: 0px;
-        max-width: 411px;
-        font-size: 16px;
-    }
-
-    header{
-        background-color: black;
-        position: fixed;
-        top: 0px;
-        right: 11px;
-        left: 11px;
-        z-index: 0;
-        border-bottom: 2px solid lightblue;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 1%;
-    }
-
-    .logo{
-        width: 50px;
-    }
-
-    li>a:link{
-        text-transform: uppercase;
-        font-size: 16px;
-    }
-
-    .nav-links{
-        margin-left: 20px;
-    }
-
-    .gifcode{
-        width: 250px;
-        margin-top: 20px;
-        margin-left: 80px;  
-    }
-
-    .giftomsg{
-        margin-left: 30px;
-    }
-
-    .mypics{
-        width: 200px;
-        height: 200px;
-        margin-top: -110px;
-        border-radius: 50vw;
-        margin-left: 100px;
-        border: 2px solid hsl(175, 49%, 44%);
-    }
-
-    .imgcss{
-        display: none;
-    }
-
-    .msgbutton{
-        margin-top: -150px;
-    }
-
-    #msg{
-        max-width: 360px;
-        line-height: 33px;
-        margin-top: 8px;
-        margin-left: 25px;
-        margin-bottom: 50px;
-        font-size: 16px;
-        color: white;
-        text-shadow: 1px 0.px hsl(175, 49%, 44%);
-    }
-
-    .msg2{
-        width: 344px;
-        margin-left: 10px;
-    }
-
-    .msg1{
-        width: 344px;
-        margin-left: 10px;
-    }
-
-    .msg3{
-        width: 344px;
-        margin-left: 10px;
-    }
-    
-    .phone {
-        display: flex;
-        margin-top: -20px;
-    }
-
-    .phone .fa-phone-square-alt{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-twitter-square{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-instagram-square{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-facebook-square{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-at{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-    }
-
-    strong{
-        display: none;
-    }
-
-    .smw{
-        padding: 5px 50px 5px 50px;
-        background-color: hsl(175, 49%, 44%);
-        text-decoration: none;
-        font-size: 20px;
-        border: 0px;
-        border-radius: 10px;
-        color: black;
-        box-shadow: 0.5px 0.5px 5px 1px white;   
-    }
-    
-    .button{
-        width: 100%;
-        margin: 60px auto 50px 0px;
-        text-align: center;
-    }
-
-    .serv{
-        font-size: 50px;
-        font-weight: 100;
-        text-align: center;
-        margin-top: 50%;
-        color: grey;
-    }
-
-    footer{
-        font-size: 14px;
-        width: 100%;
-        position: relative;
-        left: 30px;
-        bottom: 9px;
-        color: white;
-        text-align: center;
-        margin-left: -30px;
-        background-color: black;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: 'Acme', sans-serif;
-        font-weight: 100;
-    }
-
-    body{
-        background-color: black;
-        padding-left: 0px;
-        padding: 0px;
-        max-width: 411px;
-        font-size: 16px;
-        height: 650px;
-    }
-
-    header{
-        background-color: black;
-        position: fixed;
-        top: 0px;
-        right: 11px;
-        left: 11px;
-        z-index: 0;
-        border-bottom: 2px solid lightblue;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 1%;
-    }
-
-    .logo{
-        width: 50px;
-    }
-
-    li>a:link{
-        text-transform: uppercase;
-        font-size: 16px;
-    }
-
-    .nav-links{
-        margin-left: 20px;
-    }
-
-    .gifcode{
-        width: 250px;
-        margin-top: 20px;
-        margin-left: 80px;  
-    }
-
-    .giftomsg{
-        margin-left: 30px;
-    }
-
-    .mypics{
-        width: 200px;
-        height: 200px;
-        margin-top: -110px;
-        border-radius: 50vw;
-        margin-left: 100px;
-        border: 2px solid hsl(175, 49%, 44%);
-    }
-
-    .imgcss{
-        display: none;
-    }
-
-    .msgbutton{
-        margin-top: -150px;
-    }
-
-    #msg{
-        max-width: 360px;
-        line-height: 33px;
-        margin-top: 8px;
-        margin-left: 25px;
-        margin-bottom: 50px;
-        font-size: 16px;
-        color: white;
-        text-shadow: 1px 0.px hsl(175, 49%, 44%);
-    }
-
-    .msg2{
-        width: 344px;
-        margin-left: 10px;
-    }
-
-    .msg1{
-        width: 344px;
-        margin-left: 10px;
-    }
-
-    .msg3{
-        width: 344px;
-        margin-left: 10px;
-    }
-    
-    .phone {
-        display: flex;
-        margin-top: -20px;
-        margin-right: -20px;
-    }
-
-    .phone .fa-phone-square-alt{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-twitter-square{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-instagram-square{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-facebook-square{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-at{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-    }
-
-    strong{
-        display: none;
-    }
-
-    .smw{
-        padding: 5px 50px 5px 50px;
-        background-color: hsl(175, 49%, 44%);
-        text-decoration: none;
-        font-size: 20px;
-        border: 0px;
-        border-radius: 10px;
-        color: black;
-        box-shadow: 0.5px 0.5px 5px 1px white;   
-    }
-    
-    .button{
-        width: 110%;
-        margin: 60px auto 50px 0px;
-        text-align: center;
-    }
-
-    .serv{
-        font-size: 50px;
-        font-weight: 100;
-        text-align: center;
-        margin-top: 50%;
-        color: grey;
-    }
-
-    footer{
-        font-size: 14px;
-        width: 110%;
-        position: relative;
-        left: 30px;
-        bottom: 9px;
-        color: white;
-        text-align: center;
-        margin-left: -30px;
-        background-color: black;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: 'Acme', sans-serif;
-        font-weight: 100;
-    }
-
-    body{
-        background-color: black;
-        padding-left: 0px;
-        padding: 0px;
-        max-width: 411px;
-        font-size: 16px;
-        height: 450px;
-    }
-
-    header{
-        background-color: black;
-        position: fixed;
-        top: 0px;
-        right: 11px;
-        left: 11px;
-        z-index: 0;
-        border-bottom: 2px solid lightblue;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 1%;
-    }
-
-    .logo{
-        width: 50px;
-    }
-
-    li>a:link{
-        text-transform: uppercase;
-        font-size: 16px;
-    }
-
-    .nav-links{
-        margin-left: 20px;
-    }
-
-    .gifcode{
-        width: 250px;
-        margin-top: 20px;
-        margin-left: 80px;  
-    }
-
-    .giftomsg{
-        margin-left: 30px;
-    }
-
-    .mypics{
-        width: 200px;
-        height: 200px;
-        margin-top: -110px;
-        border-radius: 50vw;
-        margin-left: 100px;
-        border: 2px solid hsl(175, 49%, 44%);
-    }
-
-    .imgcss{
-        display: none;
-    }
-
-    .msgbutton{
-        margin-top: -150px;
-    }
-
-    #msg{
-        max-width: 360px;
-        line-height: 33px;
-        margin-top: 8px;
-        margin-left: 25px;
-        margin-bottom: 50px;
-        font-size: 16px;
-        color: white;
-        text-shadow: 1px 0.px hsl(175, 49%, 44%);
-    }
-
-    .msg2{
-        width: 344px;
-        margin-left: 10px;
-    }
-
-    .msg1{
-        width: 344px;
-        margin-left: 10px;
-    }
-
-    .msg3{
-        width: 344px;
-        margin-left: 10px;
-    }
-    
-    .phone {
-        display: flex;
-        margin-top: -20px;
-        margin-right: -70px;
-    }
-
-    .phone .fa-phone-square-alt{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-twitter-square{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-instagram-square{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-facebook-square{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-        margin-right: 6px;
-    }
-
-    .phone .fa-at{
-        font-size: 25px;
-        color: hsl(175, 49%, 44%);
-    }
-
-    strong{
-        display: none;
-    }
-
-    .smw{
-        padding: 5px 50px 5px 50px;
-        background-color: hsl(175, 49%, 44%);
-        text-decoration: none;
-        font-size: 20px;
-        border: 0px;
-        border-radius: 10px;
-        color: black;
-        box-shadow: 0.5px 0.5px 5px 1px white;   
-    }
-    
-    .button{
-        width: 130%;
-        margin: 60px auto 50px 0px;
-        text-align: center;
-    }
-
-    .serv{
-        font-size: 50px;
-        font-weight: 100;
-        text-align: center;
-        margin-top: 50%;
-        color: grey;
-    }
-
-    footer{
-        font-size: 14px;
-        width: 130%;
-        position: relative;
-        left: 30px;
-        bottom: -30px;
-        color: white;
-        text-align: center;
-        margin-left: -30px;
-        background-color: black;
-    }
-}
-
-@media screen and (width: 768px) {
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: 'Acme', sans-serif;
-        font-weight: 500;
-    }
-    
-    body{
-        background-color: black;
-        padding-left: 6%;
-        padding-right: 6%;
     }
     
     /*header content*/
     header{
+        min-width: 400px;
         background-color: black;
         position: fixed;
         top: 0px;
-        right: 81px;
-        left: 81px;
-        z-index: 0;
+        right: 10px;
+        left: 10px;
+        z-index: 1;
         border-bottom: 2px solid lightblue;
         display: flex;
-        justify-content: space-between;
-        padding-top: 1%;
+        justify-content: initial;
+        padding-top: 2px;
     }
     
     strong{
-        font-size: 2.5vw;
-        font-style: italic;
-        color: grey;
+        display: none;
     }
     
     .phone>a:link{
@@ -1120,13 +231,15 @@ footer{
     }
     
     .phone .fa-phone-square-alt, .phone .fa-twitter-square, .phone .fa-facebook-square, .phone .fa-instagram-square, .phone .fa-at{
-        color: hsl(175, 49%, 44%);
-        margin-bottom: 5px;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 0px;
+        margin-right: 8px;
+        font-size: 25px;
     }
     
     .logo{
         width: 50px;
-        margin-left: 15px;
+        margin-right: 196px;
     }
     
     ul li.active a{
@@ -1135,7 +248,6 @@ footer{
     
     li>a:link{
         text-transform: uppercase;
-        font-size: 20px;
     }
     
     ul>li{
@@ -1144,7 +256,7 @@ footer{
     }
     
     .nav-links{
-        padding-top: 10%;
+        padding-top: 9%;
     }
     
     .nav-link{
@@ -1153,7 +265,7 @@ footer{
     }
     
     .nav-links>li>a{
-        margin-right: 20px;
+        font-size: 16px;
     }
     
     .nav-link:hover{
@@ -1174,91 +286,90 @@ footer{
     }
     
     .content{
-        width: 100%;
-        margin-top: 100px;
+        margin-top: 70px;
     }
     /*end header*/
     
     /*content of page*/
+    .css{
+        display: none;
+    }
+    
     .phone {
-        margin-top: -2%;
         color:hsl(175, 49%, 44%);
-        float: right;
-        padding-right: 10%;
-        margin-left: -20%;
+        display: flex;
+        float: none;
+        position: absolute;
+        left: 250px;
     }
     
     .gifcode{
-        width: 25%;
-        margin-top: 2%;
-        margin-left: 5%;  
+        width: 250px;
+        margin-top: 30px;
+        margin-left: 90px;
     }
     
     .mypics{
         background-color: black;
-        width: 20vw;
-        height: 20vw;
-        border-radius: 50vw;
-        margin-top: -11%;
-        margin-left: 8%;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 165px;
+        left: 130px;
         border: 2px solid hsl(175, 49%, 44%);
     }
     
     #msg{
-        text-shadow: 1px 0.5px blue;
-        margin-top: -100px;
-        margin-left: 330px;
-        font-size: 18px;
+        width: 340px;
+        line-height: 33px;
+        margin-top: 40px;
+        margin-left: 70px;
+        font-size: 16px;
         color: white;
     }
     
     .msg1{
-        margin-left: -120px;
+        margin-left: 0px;
     }
     
     .msg2{
-        margin-left: -130px;
+        margin-left: 0px;
     }
     
-    .msg3{
-        margin-left: -290px;
-    }
-    
-    .giftomsg{
-        margin-left: 10px;
+    .msg3{width: 344px;
+        margin-left: 0px;
     }
     
     .smw{
+        width: 100%;
         padding: 5px 50px 5px 50px;
         background-color: hsl(175, 49%, 44%);
         text-decoration: none;
         font-size: 20px;
         border: 0px;
         border-radius: 10px;
-        color: white;
-        box-shadow: 0.5px 0.5px 5px 1px white;
+        color: black;
+        box-shadow: 3px 3px 0px white;
     }
     
     .button{
-        width: 115%;
+        width: 425px;
+        min-width: 0px;
+        margin: 60px 0px 50px 0px;
         text-align: center;
-        margin: 70px;
-        margin-left: -7%;
+    }
+    
+    .smw:active{
+        box-shadow: 1px 1px 0px white;
     }
     
     .msgbutton{
         margin-top: -13%;
     }
     
-    .imgcss{
-        width: 20%;
-        position: fixed;
-        top: 20%;
-        left: 50%;
-        opacity: 0.05;
-    }
-    
     .serv{
+        font-size: 700%;
         font-weight: 100;
         text-align: center;
         margin-top: 15%;
@@ -1266,13 +377,14 @@ footer{
     }
     
     footer{
-        width: 100%;
+        width: 425px;
+        min-width: 0px;
         position: absolute;
-        left: 0px;
+        bottom: 0px;
         font-size: 16px;
         bottom: 0px;
         color: white;
-        text-align: center;
+        text-align: centre;
         margin-top: 100px;
     }
 }
