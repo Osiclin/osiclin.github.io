@@ -6,7 +6,7 @@
 }
 
 body{
-    height: 100%;
+    min-height: 100%;
     min-width: 1366px;
     max-width: 100%;
     background-color: black;
@@ -190,6 +190,7 @@ footer{
     font-size: 16px;
     color: white;
     text-align: center;
+    margin-top: auto;
 }
 
 @media screen and (max-width: 425px) {
@@ -289,7 +290,7 @@ footer{
     }
     
     .content{
-        width: 425px;
+        width: 415px;
         margin: 0px;
         margin-top: 70px;
     }
@@ -363,7 +364,7 @@ footer{
     .button{
         width: 425px;
         min-width: 0px;
-        margin: 60px 0px 50px 0px;
+        margin: 50px 0px 50px 0px;
         text-align: center;
     }
     
@@ -384,14 +385,13 @@ footer{
     }
     
     footer{
+        margin-top: auto;
         width: 425px;
-        min-width: 0px;
         position: absolute;
-        left: 0px;
         bottom: 0px;
+        min-width: 0px;
         font-size: 16px;
         color: white;
         text-align: centre;
-        margin-top: 100px;
     }
 }
