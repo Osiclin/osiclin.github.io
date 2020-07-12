@@ -185,12 +185,9 @@ a.nav-link:active{
 footer{
     width: 100%;
     min-width: 1366px;
-    position: absolute;
-    bottom: 0px;
     font-size: 16px;
     color: white;
     text-align: center;
-    margin-top: auto;
 }
 
 @media screen and (max-width: 425px) {
