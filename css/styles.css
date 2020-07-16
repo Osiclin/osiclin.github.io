@@ -27,10 +27,64 @@ header{
     padding-top: 2px;
 }
 
+.hamburger{
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 2s;
+    padding-top: 50%;
+    text-align: center;  
+  }
+    
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: hsl(175, 49%, 44%);
+    display: block;
+    transition: 1s;
+  }
+    
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+    
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+a{
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 2rem;
+    color: hsl(175, 49%, 44%);
+    padding-top: 3px;
+    margin-left: 10px;
+}
+
 strong{
     font-size: 1.25rem;
     font-style: italic;
     color: grey;
+}
+
+nav{
+    padding-bottom: 5px;
 }
 
 .phone>a:link{
@@ -40,11 +94,6 @@ strong{
 .phone .fa-phone-square-alt, .phone .fa-twitter-square, .phone .fa-facebook-square, .phone .fa-instagram-square, .phone .fa-at{
     color: hsl(175, 49%, 44%);
     margin-bottom: 5px;
-}
-
-.logo{
-    width: 50px;
-    margin-left: 10px;
 }
 
 ul li.active a{
@@ -220,7 +269,20 @@ footer{
         justify-content: space-between;
         padding-top: 2px;
     }
+
+    .hamburger{
+        display: inline;
+        padding-right: 10px;
+    }
+
+    nav{
+        display: none;
+    }
     
+    .logo{
+        font-size: 1.5rem;
+    }
+
     strong{
         display: none;
     }
@@ -234,11 +296,6 @@ footer{
         margin-bottom: 0px;
         margin-right: 8px;
         font-size: 25px;
-    }
-    
-    .logo{
-        width: 50px;
-        margin-right: 196px;
     }
     
     ul li.active a{
