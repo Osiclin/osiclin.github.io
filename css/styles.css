@@ -214,7 +214,18 @@ main{
     box-shadow: 3px 3px 0px white;
 }
 
+.smw:hover{
+    color: white;
+}
+
 .button{
+    min-width: 1366px;
+    margin: 100px 0px 50px 0px;
+    text-align: center;
+}
+
+.mbutton{
+    display: none;
     min-width: 1366px;
     margin: 100px 0px 50px 0px;
     text-align: center;
@@ -226,6 +237,10 @@ main{
 
 .furnix{
     border-radius: 10px;
+}
+
+.rworks{
+    display: none;
 }
 
 figure{

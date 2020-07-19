@@ -155,12 +155,17 @@
     }
 
     .mbutton{
+        display: block;
         width: 100%;
         min-width: unset;
-        margin: 60px 0px 80px 0px;
+        margin: 58px 0px 80px 0px;
         text-align: center;
     }
     
+    .rworks{
+        display: block;
+    }
+
     .smw:active{
         box-shadow: 1px 1px 0px white;
     }
