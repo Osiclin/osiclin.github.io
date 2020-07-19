@@ -6,6 +6,7 @@
 }
 
 body{
+    color: white;
     min-height: 100%;
     min-width: 1366px;
     width: 100%;
@@ -168,7 +169,7 @@ main{
 .gifcode{
     max-width: 100%;
     margin-top: 30px;
-    margin-left: 150px;
+    margin-left: 200px;
 }
 
 .mypics{
@@ -177,14 +178,14 @@ main{
     border-radius: 50%;
     position: absolute;
     top: 130px;
-    left: 220px;
+    left: 280px;
     border: 2px solid hsl(175, 49%, 44%);
 }
 
 #msg{
     line-height: 67px;
     margin-top: -40px;
-    margin-left: 490px;
+    margin-left: 550px;
     font-size: 30px;
     color: white;
 }
@@ -215,7 +216,7 @@ main{
 
 .button{
     min-width: 1366px;
-    margin: 50px 0px 50px 0px;
+    margin: 100px 0px 50px 0px;
     text-align: center;
 }
 
@@ -224,7 +225,6 @@ main{
 }
 
 .furnix{
-    width: 30%;
     border-radius: 10px;
 }
 
@@ -236,7 +236,6 @@ figcaption{
     color: white;
     font-size: 1.3rem;
 }
-
 
 footer{
     width: 100%;
