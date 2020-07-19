@@ -8,7 +8,8 @@
 
     body{
         min-height: 100%;
-        min-width: unset;
+        height: 100%;
+        min-width: 320px;
         width: 100%;
         background-color: black;
         font-size: 100%;
@@ -16,11 +17,13 @@
     
     /*header content*/
     header{
-        width: 94%;
+        width: 100%;
         min-width: unset;
         background-color: black;
         position: fixed;
         top: 0px;
+        right: unset;
+        left: unset;
         z-index: 1;
         border-bottom: 2px solid lightblue;
         display: flex;
@@ -52,8 +55,8 @@
     .phone .fa-phone-square-alt, .phone .fa-twitter-square, .phone .fa-facebook-square, .phone .fa-instagram-square, .phone .fa-at{
         color: hsl(175, 49%, 44%);
         margin-bottom: 0px;
-        margin-right: 8px;
-        font-size: 25px;
+        margin-right: 5px;
+        font-size: 1.5rem;
     }
     
     strong:hover{
@@ -61,13 +64,18 @@
         transition: 1s;
     }
     
-    
+    .content{
+        width: 100%;
+        margin: 0px;
+        margin-top: 60px;
+    }
     /*end header*/
     
     /*content of page*/
     main{
-        margin-top: 60px;
-        width: 425px;
+        width: 100%;
+        margin-top: 0px;
+        position: relative;
     }
 
     .css{
@@ -77,22 +85,14 @@
     .phone {
         color:hsl(175, 49%, 44%);
         display: flex;
-        float: none;
-        position: absolute;
-        top: 60px;
-        left: 250px;
-        padding-right: 0px;
+        padding-right: 20px;
 
-    }
-
-    #furnix{
-        margin-top: 50%;
     }
     
     .gifcode{
         width: 250px;
-        margin-top: 30px;
-        margin-left: 90px;
+        margin-top: 100px;
+        margin-left: 20%;
     }
     
     .mypics{
@@ -101,36 +101,38 @@
         height: 200px;
         border-radius: 50%;
         position: absolute;
-        top: 160px;
-        left: 130px;
+        top: 190px;
+        left: 32%;
         border: 2px solid hsl(175, 49%, 44%);
     }
     
     #msg{
-        width: 340px;
+        width: 100%;
         line-height: 33px;
-        margin-top: 40px;
-        margin-left: 16%;
+        margin-top: 90px;
+        margin-left: unset;
+        padding-left: 16%;
         font-size: 1rem;
+        box-sizing: border-box;
         color: white;
     }
     
     .msg1{
-        margin-left: 0.4px;
+        margin-left: unset;
     }
     
     .msg2{
-        margin-left: 0px;
+        margin-left: unset;
     }
     
     .msg3{
-        width: 344px;
-        margin-left: 0px;
+        margin-left: unset;
+        width: 100%;
     }
     
     .smw{
         width: 100%;
-        padding: 1% 10% 1% 10%px;
+        padding: 5px 50px 5px 50px;
         background-color: hsl(175, 49%, 44%);
         text-decoration: none;
         font-size: 1.25rem;
@@ -143,7 +145,7 @@
     .button{
         width: 100%;
         min-width: unset;
-        margin: 10% 0% 10% 0%;
+        margin: 80px 0px 0px 0px;
         text-align: center;
     }
     
@@ -151,15 +153,11 @@
         box-shadow: 1px 1px 0px white;
     }
     
-    .msgbutton{
-        margin-top: -13%;
-    }
-    
     .serv{
-        font-size: 2rem;
+        font-size: 700%;
         font-weight: 100;
         text-align: center;
-        margin-top: 50%;
+        margin-top: 15%;
         color: grey;
     }
 
@@ -168,13 +166,11 @@
     }
     
     footer{
-        font-size: 0.8rem;
-        margin-top: auto;
-        width: 425px;
-        position: absolute;
-        bottom: 0px;
+        font-size: .9rem;
+        width: 100%;
+        position: none;
+        bottom: 0;
         min-width: unset;
-        font-size: 1rem;
         color: white;
         text-align: centre;
     }
