@@ -183,13 +183,14 @@
     }
 
     hr{
-        width: 100%;
+        width: 80%;
         color: hsl(175, 49%, 44%);
         border: 2px solid;
         position: absolute;
-        top: 590px;
+        top: 61%;
         z-index: -1;
-    
+        margin-left: 10%;
+            
     }
     
     .rw{
