@@ -7,20 +7,19 @@
 
 body{
     color: white;
-    min-height: 100%;
     min-width: 1366px;
+    min-height: 100%;
     width: 100%;
     background-color: black;
 }
 
 /*header content*/
 header{
-    min-width: 1240px;
+    width: 100%;
+    min-width: 1366px;
     background-color: black;
     position: fixed;
     top: 0px;
-    right: 60px;
-    left: 60px;
     z-index: 1;
     border-bottom: 2px solid lightblue;
     display: flex;
@@ -32,39 +31,47 @@ header{
     display: none;
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
+/* Style the navigation menu */
+.topnav {
+    display: none;
+    overflow: hidden;
     background-color: black;
-    overflow-x: hidden;
-    transition: 1s;
-    padding-top: 50%;
-    text-align: center;  
+    position: relative;
   }
-    
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    text-align: center;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: turquoise;
+    padding: 10px 16px;
     text-decoration: none;
-    font-size: 25px;
-    color: hsl(175, 49%, 44%);
+    font-size: 17px;
     display: block;
-    transition: 0.5s;
   }
-    
-  .sidenav a:hover{
-    color: #f1f1f1;
-  }
-    
-  .sidenav .closebtn {
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    display: block;
     position: absolute;
-    top: 0px;
-    right: 16px;
-    font-size: 36px;
-    margin-left: 50px;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .activ {
+    background-color: black;
+    color: white;
   }
   
 a{
@@ -72,10 +79,12 @@ a{
 }
 
 .logo{
+    font-family: 'Fredericka the Great', cursive;
     font-size: 2rem;
-    color: hsl(175, 49%, 44%);
+    color: turquoise;
     padding-top: 3px;
-    margin-left: 10px;
+    margin-left: 50px;
+    z-index: 2;
 }
 
 strong{
@@ -86,6 +95,7 @@ strong{
 
 nav{
     padding-bottom: 5px;
+    margin-right: 50px;
 }
 
 .phone>a:link{
@@ -93,12 +103,12 @@ nav{
 }
 
 .phone .fa-phone-square-alt, .phone .fa-twitter-square, .phone .fa-facebook-square, .phone .fa-instagram-square, .phone .fa-at{
-    color: hsl(175, 49%, 44%);
+    color: turquoise;
     margin-bottom: 5px;
 }
 
 ul li.active a{
-    color: hsl(175, 49%, 44%);
+    color: turquoise;
 }
 
 li>a:link{
@@ -116,7 +126,7 @@ ul>li{
 
 .nav-link{
     text-decoration: none;
-    color: white;
+    color: turquoise;
 }
 
 .nav-links>li>a{
@@ -125,11 +135,9 @@ ul>li{
 }
 
 .nav-link:hover{
-    color:white;
     transition: 1s;
-    background-color: hsl(175, 49%, 44%);
-    padding: 4px;
-    border-radius: 2px;
+    border-bottom: 2px solid;
+    transform: translate(0px, 5px);
 }
 
 strong:hover{
@@ -139,29 +147,24 @@ strong:hover{
 
 a.nav-link:active{
     font-size: small;
+    border-bottom: 2px solid;
 }
 
 .content{
     margin-top: 100px;
 }
+
 /*end header*/
 
 /*content of page*/
 main{
+    width: 100%;
     margin-top: 100px;
     position: relative;
 }
 
-.css{
-    width: 300px;
-    position: absolute;
-    top: 50px;
-    left: 680px;
-    opacity: 0.06;
-}
-
 .phone {
-    color:hsl(175, 49%, 44%);
+    color: turquoise;
     float: right;
     padding-right: 110px;
 }
@@ -169,33 +172,71 @@ main{
 .gifcode{
     max-width: 100%;
     margin-top: 30px;
-    margin-left: 200px;
+    margin-left: 135px;
 }
 
 .mypics{
     background-color: black;
+    width: 250px;
     max-width: 100%;
     border-radius: 50%;
     position: absolute;
-    top: 130px;
-    left: 280px;
-    border: 2px solid hsl(175, 49%, 44%);
+    top: 132px;
+    left: 216px;
+    border: 3px solid black;
+    z-index: 1;
+}
+
+.aaa{
+    box-shadow: 2px 2px 2px black;
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    margin-top: -200px;
+    position: absolute;
+    top: 320px;
+    left: 210px;
+    z-index: 1;
+}
+
+.aaaa{
+    box-shadow: 2px 2px 2px black;
+    border-radius: 50%;
+    width: 290px;
+    height: 290px;
+    margin-top: -200px;
+    position: absolute;
+    top: 305px;
+    left: 200px;
+    z-index: 1;
+}
+
+.aaaaa{
+    background-color: turquoise;
+    border-radius: 50%;
+    width: 276px;
+    height: 275px;
+    margin-top: -200px;
+    position: absolute;
+    top: 325px;
+    left: 230px;
+    
 }
 
 #msg{
     line-height: 67px;
-    margin-top: -40px;
-    margin-left: 550px;
+    margin-top: -25px;
+    margin-left: 480px;
     font-size: 30px;
     color: white;
 }
 
 .msg1{
-    margin-left: -12px;
+    margin-left: 35px;
 }
 
 .msg2{
-    margin-left: -30px;
+    margin-left: 13px;
 }
 
 .msg3{
@@ -205,7 +246,7 @@ main{
 .smw{
     width: 100%;
     padding: 5px 50px 5px 50px;
-    background-color: hsl(175, 49%, 44%);
+    background-color: turquoise;
     text-decoration: none;
     font-size: 20px;
     border: 0px;
@@ -220,7 +261,7 @@ main{
 
 .button{
     min-width: 1366px;
-    margin: 100px 0px 50px 0px;
+    margin: 50px 0px 50px 0px;
     text-align: center;
 }
 
@@ -239,7 +280,7 @@ main{
     border-radius: 10px;
 }
 
-.rworks{
+.recentworks{
     display: none;
 }
 

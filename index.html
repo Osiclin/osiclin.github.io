@@ -4,30 +4,33 @@
         <title>Welcome</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/9baa8c6e06.js" crossorigin="anonymous"></script>
-        <script src="js/nav.js"></script>
         <link href="css/styles.css" type="text/css" rel="stylesheet">
         <link href="css/mobilelayout.css" type="text/css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
             <a class="logo" href="https://osiclin.github.io">Osita Ezeigbo</a>
             <nav>
                 <ul class="nav-links">
-                    <li class="active"><a class="nav-link" href="#">home</a></li>
+                    <li class="active"><a class="nav-link" href="https://osiclin.github.io">home</a></li>
                     <li><a class="nav-link" href="services.html">services</a></li>
                 </ul>
             </nav>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="https://osiclin.github.io">Home</a>
-                <a href="services.html">Services</a>
-                <a href="#contact">Contact</a>
+            <div class="topnav active">
+                <a href="#home" class="activ" style="font-family: 'Fredericka the Great', cursive;">Osita Ezeigbo</a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                  <a href="#news">Home</a>
+                  <a href="#contact">Services</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
-            <span class="hamburger" style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
         </header>
         <main>
-            <img class="css" src="images/css-3.svg">
             <div class="content">
                 <div class="phone">
                     <a href="tel:+2348033779715"><i class="fas fa-phone-square-alt fa-lg"><strong> +2348033779715</strong></i></a><br/>
@@ -36,28 +39,46 @@
                     <a href="https://www.facebook.com/osiclin"><i class="fab fa-facebook-square fa-lg"><strong> facebook</strong></i></a><br/>
                     <a href="mailto:ositaezeigboc@outlook.com"><i class="fas fa-at fa-lg"><strong> mail</strong></i></a>
                 </div>
+                <div class="codepicsmsg">
                 <img class="gifcode" src="images/htmlcodes.gif" width="350px">
-                <img class="mypics" src="images/front1.jpg" width="250px" height="250px">
+                <img class="mypics" src="images/front.jpg" >
+                <div class="aaa"></div>
+                <div class="aaaa"></div>
+                <div class="aaaaa"></div>
                 <div id="msg">                        
                     <h1 class="msg1">Hi,</h1>
                     <h1 class="msg2">I'm Osita,</h1>
                     <h1 class="msg3">I design & develop professional websites.</h1>
                 </div>
+                </div>
                 <div class="button">
                     <a class="smw" href="portfolio.html">See my Works</a>
                 </div>
-                <div class="mbutton">
+                <div id="mb" class="mbutton">
                     <a href="#rworks" class="smw">See my Works</a>
                 </div>
             </div>
+            <div id="rs" class="recentworks">
             <div class="rworks">
             <h2 id="rworks" class="rw">Recent Works</h2>
             <hr>
+            </div>
             <figure>
                 <a href="http://osiclin.github.io/Furnix"><img class="furnix" src="images/furnix.png" width="300px"></a>
                 <figcaption>FurNiX<br/>A furniture website</figcaption>
-                </figure>
+            </figure>
             </div>
         </main>
+        <script src="js/smwdrop.js"></script>
+        <script>
+            function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+        </script>
     </body>
 </html>
