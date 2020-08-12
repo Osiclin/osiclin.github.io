@@ -50,7 +50,7 @@ header{
     color: turquoise;
     padding: 10px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.4rem;
     display: block;
   }
   
@@ -58,6 +58,7 @@ header{
   .topnav a.icon {
     display: block;
     position: absolute;
+    font-size: 1.5rem;
     right: 0;
     top: 0;
   }
@@ -224,6 +225,7 @@ main{
 }
 
 #msg{
+    height: 200px;
     line-height: 67px;
     margin-top: -25px;
     margin-left: 480px;
