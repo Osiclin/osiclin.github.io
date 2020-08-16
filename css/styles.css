@@ -88,6 +88,10 @@ a{
     z-index: 2;
 }
 
+.sname{
+   display: none;
+}
+
 strong{
     font-size: 1.25rem;
     font-style: italic;
@@ -304,4 +308,3 @@ footer{
     position: absolute;
     bottom: 0;
 }
-
