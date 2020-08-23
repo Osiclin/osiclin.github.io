@@ -191,6 +191,12 @@ main{
     left: 216px;
     border: 3px solid black;
     z-index: 1;
+    animation: mypicsmove 5s infinite;
+}
+
+@keyframes mypicsmove {
+    50% {top: 126px;}  
+     
 }
 
 .aaa{
