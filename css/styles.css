@@ -7,8 +7,8 @@
 
 body{
     color: white;
-    min-width: 1366px;
     min-height: 100%;
+    min-width: 1366px;
     width: 100%;
     background-color: black;
 }
@@ -16,7 +16,7 @@ body{
 /*header content*/
 header{
     width: 100%;
-    min-width: 1366px;
+    min-width: 1240px;
     background-color: black;
     position: fixed;
     top: 0px;
@@ -31,48 +31,40 @@ header{
     display: none;
 }
 
-/* Style the navigation menu */
-.topnav {
+.sidenav {
     display: none;
-    overflow: hidden;
-    background-color: black;
-    position: relative;
-  }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-    text-align: center;
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: turquoise;
-    padding: 10px 16px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    display: block;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    display: block;
-    position: absolute;
-    font-size: 1.5rem;
-    right: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
     top: 0;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .topnav a:hover {
+    right: 0;
     background-color: black;
-    color: white;
+    overflow-x: hidden;
+    transition: 1s;
+    text-align: center;
+    padding-top: 300px;
   }
-  
-  /* Style the active link (or home/logo) */
-  .activ {
-    background-color: black;
-    color: white;
+    
+  .sidenav a {
+    padding: 8px 0px 8px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: hsl(175, 49%, 44%);
+    display: block;
+    transition: 0.5s;
+  }
+    
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+    
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    font-size: 36px;
+    margin-left: 50px;
   }
   
 a{
@@ -80,27 +72,21 @@ a{
 }
 
 .logo{
-    font-family: 'Fredericka the Great', cursive;
     font-size: 2rem;
-    color: turquoise;
+    color: hsl(175, 49%, 44%);
     padding-top: 3px;
-    margin-left: 50px;
+    margin-left: 10px;
     z-index: 2;
 }
 
-.sname{
-   display: none;
-}
-
 strong{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-style: italic;
     color: grey;
 }
 
 nav{
     padding-bottom: 5px;
-    margin-right: 50px;
 }
 
 .phone>a:link{
@@ -108,12 +94,12 @@ nav{
 }
 
 .phone .fa-phone-square-alt, .phone .fa-twitter-square, .phone .fa-facebook-square, .phone .fa-instagram-square, .phone .fa-at{
-    color: turquoise;
+    color: hsl(175, 49%, 44%);
     margin-bottom: 5px;
 }
 
 ul li.active a{
-    color: turquoise;
+    color: hsl(175, 49%, 44%);
 }
 
 li>a:link{
@@ -131,7 +117,7 @@ ul>li{
 
 .nav-link{
     text-decoration: none;
-    color: turquoise;
+    color: white;
 }
 
 .nav-links>li>a{
@@ -140,9 +126,11 @@ ul>li{
 }
 
 .nav-link:hover{
+    color:white;
     transition: 1s;
-    border-bottom: 2px solid;
-    transform: translate(0px, 5px);
+    background-color: hsl(175, 49%, 44%);
+    padding: 4px;
+    border-radius: 2px;
 }
 
 strong:hover{
@@ -152,104 +140,63 @@ strong:hover{
 
 a.nav-link:active{
     font-size: small;
-    border-bottom: 2px solid;
 }
 
 .content{
     margin-top: 100px;
 }
-
 /*end header*/
 
 /*content of page*/
 main{
-    width: 100%;
     margin-top: 100px;
     position: relative;
 }
 
+.css{
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    left: 680px;
+    opacity: 0.06;
+}
+
 .phone {
-    color: turquoise;
+    color:hsl(175, 49%, 44%);
     float: right;
     padding-right: 110px;
-    font-size: 1.4rem;
 }
 
 .gifcode{
     max-width: 100%;
     margin-top: 30px;
-    margin-left: 135px;
+    margin-left: 200px;
 }
 
 .mypics{
     background-color: black;
-    width: 250px;
     max-width: 100%;
     border-radius: 50%;
     position: absolute;
-    top: 132px;
-    left: 216px;
-    border: 3px solid black;
-    z-index: 1;
-    animation: mypicsmove 5s infinite;
-}
-
-@keyframes mypicsmove {
-    50% {top: 126px;}  
-     
-}
-
-.aaa{
-    box-shadow: 2px 2px 2px black;
-    border-radius: 50%;
-    width: 270px;
-    height: 270px;
-    margin-top: -200px;
-    position: absolute;
-    top: 320px;
-    left: 210px;
-    z-index: 1;
-}
-
-.aaaa{
-    box-shadow: 2px 2px 2px black;
-    border-radius: 50%;
-    width: 290px;
-    height: 290px;
-    margin-top: -200px;
-    position: absolute;
-    top: 305px;
-    left: 200px;
-    z-index: 1;
-}
-
-.aaaaa{
-    background-color: turquoise;
-    border-radius: 50%;
-    width: 276px;
-    height: 275px;
-    margin-top: -200px;
-    position: absolute;
-    top: 325px;
-    left: 230px;
-    
+    top: 130px;
+    left: 280px;
+    border: 2px solid hsl(175, 49%, 44%);
 }
 
 #msg{
-    height: 200px;
     line-height: 67px;
-    margin-top: -25px;
-    margin-left: 480px;
+    margin-top: -40px;
+    margin-left: 550px;
     font-size: 30px;
     color: white;
 }
 
 .msg1{
-    margin-left: 35px;
+    margin-left: -12px;
 }
 
 .msg2{
-    margin-left: 13px;
+    margin-left: -30px;
 }
 
 .msg3{
@@ -259,7 +206,7 @@ main{
 .smw{
     width: 100%;
     padding: 5px 50px 5px 50px;
-    background-color: turquoise;
+    background-color: hsl(175, 49%, 44%);
     text-decoration: none;
     font-size: 20px;
     border: 0px;
@@ -274,20 +221,36 @@ main{
 
 .button{
     min-width: 1366px;
-    margin: 50px 0px 50px 0px;
+    margin: 100px 0px 50px 0px;
     text-align: center;
 }
 
 .mbutton{
     display: none;
+    min-width: 1366px;
+    margin: 100px 0px 50px 0px;
+    text-align: center;
 }
 
 .smw:active{
     box-shadow: 1px 1px 0px white;
 }
 
-.recentworks{
+.furnix{
+    border-radius: 10px;
+}
+
+.rworks{
     display: none;
+}
+
+figure{
+    text-align: center;
+}
+
+figcaption{
+    color: white;
+    font-size: 1.3rem;
 }
 
 footer{
@@ -296,54 +259,7 @@ footer{
     font-size: 16px;
     color: white;
     text-align: center;
-    margin-top: 90px;
-}
-
-/*portfolio*/
-.project-container{
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-.project-block{
-    width: 100%;
-    margin-top: 90px;
-    display: flex;
-    justify-content: center;
-}
-
-.furnix{
-    box-sizing: border-box;
-    box-shadow: 10px 10px white;
-    width: 270px;
-    height: 300px;
-    background: linear-gradient(turquoise, rgba(60, 60, 179, 0.589));
-}
-
-.furnix:hover{
-    background: black;
-    border: 2px solid white;
-    box-shadow: 5px 5px turquoise;
-}
-
-.furnix:active{
-    box-shadow: 2px 2px white;
-}
-
-.uw{
-    width: 30%;
-    font-size: 1.5rem;
-    color: white;
     position: absolute;
-    top: 80%;
-    left: 25%;
+    bottom: 0;
 }
 
-.uw1{
-    width: 18%;
-    font-size: 1.5rem;
-    color: white;
-    position: absolute;
-    top: 89%;
-    left: 78%;
-}
