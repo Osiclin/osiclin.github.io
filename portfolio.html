@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome</title>
+        <title>Projects</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/9baa8c6e06.js" crossorigin="anonymous"></script>
         <script src="js/nav.js"></script>
-        <link href="css/styles.css" type="text/css" rel="stylesheet"> 
-        <link href="css/mobilelayout.css" type="text/css" rel="stylesheet">
+        <link href="css/styles.css" type="text/css" rel="stylesheet">
+        <link href="css/mobilelayout.css" type="text/css" rel="stylesheet"> 
     </head>
     <body>
         <header>
             <a class="logo" href="https://osiclin.github.io">Osita Ezeigbo</a>
             <nav>
                 <ul class="nav-links">
-                    <li class="active"><a class="nav-link" href="index.html">home</a></li>
-                    <li><a class="nav-link" href="services.html">services</a></li>
+                    <li><a class="nav-link" href="https://osiclin.github.io">home</a></li>
+                    <li class="active"><a class="nav-link" href="services.html">services</a></li>
                 </ul>
             </nav>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="https://osiclin.github.io">Home</a>
-                <a href="services.html">Services</a>
+            <div class="topnav active">
+                <a href="#home" class="activ">Osita Ezeigbo</a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                  <a href="#news">Home</a>
+                  <a href="#contact">Services</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
-            <span class="hamburger" style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
         </header>
         <main>
-            <figure>
-            <a href="http://osiclin.github.io/Furnix"><img class="furnix" src="images/furnix.png" width="300px"></a>
-            <figcaption>FurNiX<br/>A furniture website</figcaption>
-            </figure>
+            <div class="project-container">
+            <div class="project-block">
+                <a href="http://osiclin.github.io/unscramblewords"><div class="furnix"><p class="uw">Unscramble<br/>Words</p></div></a>
+            </div>
+            <div class="project-block">
+                <a href="http://osiclin.github.io/Furnix"><div class="furnix"><p class="uw1">FurNix</p></div></a>
+            </div>
+            </div>
         </main>
     </body>
 </html>
