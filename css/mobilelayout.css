@@ -40,6 +40,10 @@
         width: 100%;
     }
 
+    .recentworks{
+        display: block;
+    }
+
     nav{
         display: none;
     }
