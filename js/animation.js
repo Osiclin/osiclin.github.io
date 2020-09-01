@@ -30,12 +30,12 @@ furnix1.style.display = 'none';
 
 window.addEventListener('scroll', () => {
     if ( document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 ) {
-        setTimeout( () => {furnix.style.display = 'block'}, 100);
-        furnix.classList.add('slideUp')
+        furnix.style.display = 'block';
+        furnix.classList.add('slideleft');
     }
     if ( document.body.scrollTop > 430 || document.documentElement.scrollTop > 430 ) {
-        setTimeout( () => {furnix1.style.display = 'block'}, 100);
-        furnix1.classList.add('slideUp')
+        furnix1.style.display = 'block';
+        furnix1.classList.add('slideright');
     }
 })
 

@@ -156,25 +156,20 @@
          
     }
 
-    /*Slide up*/
-    .slideUp {
-        animation-name: slideUp;
-        -webkit-animation-name: slideUp;
+    /*Slide from left*/
+    .slideleft {
+        animation-name: slideleft;
+        -webkit-animation-name: slideleft;
         animation-duration: 2s;
         -webkit-animation-duration: 2s;
         visibility: visible;
       }
       
-      @keyframes slideUp {
+      @keyframes slideleft {
         0% {
           opacity: 0;
-          -webkit-transform: translateX(100%);
+          -webkit-transform: translateX(50%);
         } 
-
-        50% {
-            opacity: 1;
-            -webkit-transform: translateY(10%);
-          } 
 
         100% {
           opacity: 1;
@@ -182,16 +177,44 @@
         }
       }
       
-      @-webkit-keyframes slideUp {
-        0% {
+      @-webkit-keyframes slideleft {
+          0% {
             opacity: 0;
-            -webkit-transform: translateX(100%);
+            -webkit-transform: translateX(50%);
           } 
   
-          50% {
-              opacity: 1;
-              -webkit-transform: translateY(10%);
-            } 
+          100% {
+            opacity: 1;
+            -webkit-transform: translateY(0%);
+          }
+        }
+
+    /*slide from right*/
+    .slideright {
+        animation-name: slideright;
+        -webkit-animation-name: slideright;
+        animation-duration: 2s;
+        -webkit-animation-duration: 2s;
+        visibility: visible;
+      }
+      
+      @keyframes slideright {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateX(-50%);
+        } 
+
+        100% {
+          opacity: 1;
+          -webkit-transform: translateY(0%);
+        }
+      }
+      
+      @-webkit-keyframes slideleft {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateX(-50%);
+          } 
   
           100% {
             opacity: 1;
