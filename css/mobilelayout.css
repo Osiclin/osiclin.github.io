@@ -121,6 +121,7 @@
         box-shadow: 10px 10px white;
         width: 270px;
         height: 300px;
+        position: relative;
     }
 
 
@@ -352,18 +353,9 @@
         font-size: 1.5rem;
         color: white;
         position: absolute;
-        top: 320px;
+        top: 0px;
         left: 48%;
 
-    }
-
-    .uw1{
-        width: 18%;
-        font-size: 1.5rem;
-        color: white;
-        position: absolute;
-        top: 700px;
-        left: 60%;
     }
     
     footer{
@@ -540,17 +532,8 @@
         font-size: 1.4rem;
         color: white;
         position: absolute;
-        top: 44%;
+        top: 0%;
         left: 48%;
-    }
-
-    .uw1{
-        width: 18%;
-        font-size: 1.4rem;
-        color: white;
-        position: absolute;
-        top: 96%;
-        left: 62%;
     }
 
     .mbutton{
@@ -637,6 +620,7 @@
             box-shadow: 10px 10px white;
             width: 240px;
             height: 270px;
+            position: relative;
         }
         
         .uw{
@@ -644,7 +628,7 @@
             font-size: 1.3rem;
             color: white;
             position: absolute;
-            top: 44%;
+            top: 0%;
             left: 48%;
         }
     
@@ -653,7 +637,7 @@
             font-size: 1.3rem;
             color: white;
             position: absolute;
-            top: 96%;
+            top: 0%;
             left: 62%;
         }
 
