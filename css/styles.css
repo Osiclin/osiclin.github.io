@@ -301,8 +301,9 @@ footer{
 
 /*portfolio*/
 .project-container{
+    margin-top: 100px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
 }
 
 .project-block{
@@ -319,6 +320,7 @@ footer{
     height: 300px;
     background: linear-gradient(turquoise, rgba(60, 60, 179, 0.589), transparent);
     border-radius: 7px;
+    position: relative;
 }
 
 .furnix:hover{
@@ -336,8 +338,8 @@ footer{
     font-size: 1.5rem;
     color: white;
     position: absolute;
-    top: 80%;
-    left: 24%;
+    top: 10px;
+    left: 120px;
     font-family: 'Fredericka the Great', cursive;
 }
 
@@ -346,7 +348,15 @@ footer{
     font-size: 1.5rem;
     color: white;
     position: absolute;
-    top: 89%;
-    left: 78%;
+    top: 10px;
+    left: 120px;
     font-family: 'Fredericka the Great', cursive;
+}
+
+.tools{
+    color: white;
+    position: absolute;
+    top: 260px;
+    left: 20px;
+    font-family: 'Alegreya', serif;
 }
