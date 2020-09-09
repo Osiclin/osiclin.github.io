@@ -5,6 +5,13 @@ $('.mypics').hide().delay(1000).fadeIn(1500);
 $('.msg1').hide().delay(300).slideDown(500);
 $('.msg2').hide().delay(500).slideDown(600);
 $('.msg3').hide().delay(700).slideDown(700);
+$('.projectinfo').hide();
+
+
+
+$('.mbutton').on('click', function() {
+    $('#rworks').slideDown()
+})
 
 
 $('#hb').on('click', function() {
@@ -24,18 +31,37 @@ $('#hb').on('click', function() {
 
 var furnix = document.getElementById('furnix');
 var furnix1 = document.getElementById('furnix1');
+var furnix2 = document.getElementById('furnix2');
+var hr = document.getElementById('hr');
+var rworks = document.getElementById('rworks');
 
 furnix.style.display = 'none';
 furnix1.style.display = 'none';
+furnix2.style.display = 'none';
+hr.style.display = 'none';
+rworks.style.display = 'none';
+
 
 window.addEventListener('scroll', () => {
-    if ( document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 ) {
+    if ( document.body.scrollTop > 120 || document.documentElement.scrollTop > 120 ) {
         furnix.style.display = 'block';
+        $('.projectinfo').fadeIn();
         furnix.classList.add('slideleft');
     }
-    if ( document.body.scrollTop > 430 || document.documentElement.scrollTop > 430 ) {
+    if ( document.body.scrollTop > 450 || document.documentElement.scrollTop > 450 ) {
         furnix1.style.display = 'block';
-        furnix1.classList.add('slideright');
+        furnix1.classList.add('slideleft');
+    }
+    if ( document.body.scrollTop > 750 || document.documentElement.scrollTop > 750 ) {
+        furnix2.style.display = 'block';
+        furnix2.classList.add('slideleft');
+    }
+    if ( document.body.scrollTop > 90 || document.documentElement.scrollTop > 90 ) {
+        hr.style.display = 'block';
+        hr.classList.add('slideright');
+    }
+    if ( document.body.scrollTop > 90 || document.documentElement.scrollTop > 90 ) {
+        $('#rworks').fadeIn(1000);
     }
 })
 

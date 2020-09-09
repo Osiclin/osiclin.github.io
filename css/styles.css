@@ -84,7 +84,7 @@ a{
     font-size: 2rem;
     color: turquoise;
     padding-top: 3px;
-    margin-left: 50px;
+    margin-left: 100px;
     z-index: 2;
 }
 
@@ -93,14 +93,14 @@ a{
 }
 
 strong{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-style: italic;
     color: grey;
 }
 
 nav{
     padding-bottom: 5px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 .phone>a:link{
@@ -170,14 +170,14 @@ main{
 .phone {
     color: turquoise;
     float: right;
-    padding-right: 110px;
-    font-size: 1.4rem;
+    padding-right: 160px;
+    font-size: 1.2rem;
 }
 
 .gifcode{
     max-width: 100%;
     margin-top: 30px;
-    margin-left: 135px;
+    margin-left: 160px;
 }
 
 .mypics{
@@ -187,7 +187,7 @@ main{
     border-radius: 50%;
     position: absolute;
     top: 132px;
-    left: 216px;
+    left: 241px;
     border: 3px solid black;
     z-index: 1;
     animation: mypicsmove 5s infinite;
@@ -206,7 +206,7 @@ main{
     margin-top: -200px;
     position: absolute;
     top: 320px;
-    left: 210px;
+    left: 235px;
     z-index: 1;
 }
 
@@ -218,7 +218,7 @@ main{
     margin-top: -200px;
     position: absolute;
     top: 305px;
-    left: 200px;
+    left: 225px;
     z-index: 1;
 }
 
@@ -230,7 +230,7 @@ main{
     margin-top: -200px;
     position: absolute;
     top: 325px;
-    left: 230px;
+    left: 255px;
     
 }
 
@@ -244,11 +244,11 @@ main{
 }
 
 .msg1{
-    margin-left: 35px;
+    margin-left: 58px;
 }
 
 .msg2{
-    margin-left: 13px;
+    margin-left: 38px;
 }
 
 .msg3{
@@ -277,15 +277,11 @@ main{
     text-align: center;
 }
 
-.mbutton{
-    display: none;
-}
-
 .smw:active{
     box-shadow: 1px 1px 0px white;
 }
 
-.recentworks{
+#mobile{
     display: none;
 }
 
@@ -301,13 +297,15 @@ footer{
 
 /*portfolio*/
 .project-container{
+    width: 74%;
+    margin: 0 auto;
     margin-top: 100px;
     display: grid;
     grid-template-columns: auto auto auto;
 }
 
 .project-block{
-    width: 100%;
+    width: 80%;
     margin-top: 90px;
     display: flex;
     justify-content: center;
@@ -356,7 +354,7 @@ footer{
 .tools{
     color: white;
     position: absolute;
-    top: 260px;
-    left: 20px;
+    top: 90%;
+    left: 10%;
     font-family: 'Alegreya', serif;
 }
