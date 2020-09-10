@@ -45,8 +45,8 @@ rworks.style.display = 'none';
 window.addEventListener('scroll', () => {
     if ( document.body.scrollTop > 120 || document.documentElement.scrollTop > 120 ) {
         furnix.style.display = 'block';
-        $('.projectinfo').fadeIn();
         furnix.classList.add('slideleft');
+        $('.projectinfo').fadeIn(3000);
     }
     if ( document.body.scrollTop > 450 || document.documentElement.scrollTop > 450 ) {
         furnix1.style.display = 'block';
