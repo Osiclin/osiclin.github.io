@@ -337,6 +337,7 @@
         width: 16%;
         color: hsl(175, 49%, 44%);
         border: 2px solid hsl(175, 49%, 44%);
+        margin-top: 5px;
     }
     
     .rw{
