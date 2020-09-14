@@ -37,28 +37,31 @@ hr.style.visibility = 'hidden';
 if ( window.outerWidth <= 480 ) {
 window.addEventListener('scroll', () => {
     if ( document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 ) {
-            furnix[0].classList.add('slideleft');
+            furnix[0].classList.add('slideup');
             furnix[0].style.visibility = 'visible';
         } else {}
-        if ( document.body.scrollTop > 482 || document.documentElement.scrollTop > 482 ) {
-                projectinfo[0].style.visibility = 'visible';
+        if ( document.body.scrollTop > 440 || document.documentElement.scrollTop > 440 ) {
+            projectinfo[0].classList.add('slideright')
+            projectinfo[0].style.visibility = 'visible';
         }
 
-    if ( document.body.scrollTop > 700 || document.documentElement.scrollTop > 700 ) {
-            furnix[1].classList.add('slideright');
+    if ( document.body.scrollTop > 630 || document.documentElement.scrollTop > 630 ) {
+            furnix[1].classList.add('slideup');
             furnix[1].style.visibility = 'visible';
         } else {}
-        if ( document.body.scrollTop > 877 || document.documentElement.scrollTop > 877 ) {
+        if ( document.body.scrollTop > 870 || document.documentElement.scrollTop > 870 ) {
+            projectinfo[1].classList.add('slideright')
             projectinfo[1].style.visibility = 'visible';
     }
-    if ( document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100 ) {
+    if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000 ) {
             furnix[2].classList.add('slideup');
             furnix[2].style.visibility = 'visible';
         } else {}
-        if ( document.body.scrollTop > 1277 || document.documentElement.scrollTop > 1277 ) {
+        if ( document.body.scrollTop > 1240 || document.documentElement.scrollTop > 1240 ) {
+            projectinfo[2].classList.add('slideright')
             projectinfo[2].style.visibility = 'visible';
     }
-    if ( document.body.scrollTop > 130 || document.documentElement.scrollTop > 130 ) {
+    if ( document.body.scrollTop > 120 || document.documentElement.scrollTop > 120 ) {
         hr.style.visibility = 'visible';
         hr.classList.add('slideright');
     } else {}
