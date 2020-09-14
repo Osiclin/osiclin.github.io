@@ -368,7 +368,6 @@ footer{
     -webkit-animation-name: slideup;
     animation-duration: 2s;
     -webkit-animation-duration: 2s;
-    visibility: visible;
   }
   
   @keyframes slideup {
@@ -401,7 +400,6 @@ footer{
     -webkit-animation-name: slideright;
     animation-duration: 2s;
     -webkit-animation-duration: 2s;
-    visibility: visible;
   }
   
   @keyframes slideright {
