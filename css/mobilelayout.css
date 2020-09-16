@@ -389,8 +389,11 @@
         margin-top: 50px;
         bottom: unset;
         min-width: unset;
-        color: white;
         text-align: centre;
+    }
+
+    footer>p{
+        width: 40%;
     }
 }
 
