@@ -144,6 +144,15 @@
         box-shadow: 2px 2px white;
     }
     
+    #services-container{
+        flex-direction: column;
+    }
+
+    .service-block{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
     .gifcode{
         width: 300px;
         margin-top: 20px;
@@ -338,7 +347,7 @@
     .mbutton{
         width: 10%;
         min-width: unset;
-        margin: 0 auto 50px;
+        margin: 0 auto;
         text-align: center;
     }
 
@@ -346,17 +355,10 @@
         box-shadow: 1px 1px 0px white;
     }
 
-    .serv{
-        font-size: 700%;
-        font-weight: 100;
-        text-align: center;
-        margin-top: 15%;
-        color: grey;
-    }
-
-    .recentworks{
+    .recentworks, #services{
         width: 90%;
         padding-left: 6%;
+        margin-top: 50px;
     }
 
     hr{
@@ -367,7 +369,7 @@
         margin-top: 5px;
     }
     
-    .rw{
+    .rw, .serv{
         font-size: 1.4rem;
         width: 40%;
         background-color: black;
