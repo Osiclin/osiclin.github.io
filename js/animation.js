@@ -23,6 +23,12 @@ var srhr = document.getElementById('srhr');
 var rworks = document.getElementById('rworks');
 var projectinfo = document.getElementsByClassName('projectinfo');
 
+// var rwhrposition = rwhr.offsetTop;
+// console.log(rwhrposition)
+// console.log(window.pageYOffset)
+
+
+
 for (i = 0; i < furnix.length; i++){
     furnix[i].style.visibility = 'hidden';
 }
@@ -68,6 +74,10 @@ window.addEventListener('scroll', () => {
         rwhr.style.visibility = 'visible';
         rwhr.classList.add('slideright');
     } else {}
+    // if ( window.pageYOffset > 113 ) {
+    //     rwhr.style.visibility = 'visible';
+    //     rwhr.classList.add('slideright');
+    // } else {}
     if ( document.body.scrollTop > 1430 || document.documentElement.scrollTop > 1430 ) {
         srhr.style.visibility = 'visible';
         srhr.classList.add('slideright');

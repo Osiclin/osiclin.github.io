@@ -203,14 +203,16 @@ main{
 }
 
 #myname{
-    animation: name 5s infinite;
+    animation: name 10s infinite;
     transition: 2s;
 }
 
 @keyframes name {
     0% {color: white}
-    50% {color: turquoise}
-    100% {color: rgb(0, 124, 255)}
+    25% {color: turquoise}
+    50% {color: rgb(0, 124, 255)}
+    75% {color: turquoise}
+    100% {color: white}
 }
 
 .aaa{
