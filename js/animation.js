@@ -17,15 +17,31 @@ $('#hb').on('click', function() {
 })
 
 
+var mylinks = document.getElementById('myLinks');
+function closeNav() {
+    if ( mylinks.style.display == 'block' ) {
+        $('#myLinks').slideUp(600);
+    }
+}
+
+$('main').on('click', closeNav);
+
 var furnix = document.getElementsByClassName('furnix');
+var furnix1 = document.getElementById('furnix1');
+var furnix2 = document.getElementById('furnix2');
+var furnix3 = document.getElementById('furnix3');
+var furnix4 = document.getElementById('furnix4');
 var rwhr = document.getElementById('rwhr');
 var srhr = document.getElementById('srhr');
 var rworks = document.getElementById('rworks');
 var projectinfo = document.getElementsByClassName('projectinfo');
 
-// var rwhrposition = rwhr.offsetTop;
-// console.log(rwhrposition)
-// console.log(window.pageYOffset)
+var rwhrposition = rwhr.offsetTop;
+var srhrposition = srhr.offsetTop;
+var furnix1position = furnix1.offsetTop;
+var furnix2position = furnix2.offsetTop;
+var furnix3position = furnix3.offsetTop;
+var furnix4position = furnix4.offsetTop;
 
 
 
@@ -45,43 +61,34 @@ srhr.style.visibility = 'hidden';
 // mobile effect
 if ( window.outerWidth <= 480 ) {
 window.addEventListener('scroll', () => {
-    if ( document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 ) {
-            furnix[0].classList.add('slideup');
-            furnix[0].style.visibility = 'visible';
-        } else {}
-        if ( document.body.scrollTop > 440 || document.documentElement.scrollTop > 440 ) {
-            projectinfo[0].classList.add('slideright')
-            projectinfo[0].style.visibility = 'visible';
-        }
-
-    if ( document.body.scrollTop > 630 || document.documentElement.scrollTop > 630 ) {
-            furnix[1].classList.add('slideup');
-            furnix[1].style.visibility = 'visible';
-        } else {}
-        if ( document.body.scrollTop > 870 || document.documentElement.scrollTop > 870 ) {
-            projectinfo[1].classList.add('slideright')
-            projectinfo[1].style.visibility = 'visible';
-    }
-    if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000 ) {
-            furnix[2].classList.add('slideup');
-            furnix[2].style.visibility = 'visible';
-        } else {}
-        if ( document.body.scrollTop > 1240 || document.documentElement.scrollTop > 1240 ) {
-            projectinfo[2].classList.add('slideright')
-            projectinfo[2].style.visibility = 'visible';
-    }
-    if ( document.body.scrollTop > 120 || document.documentElement.scrollTop > 120 ) {
+    if ( window.pageYOffset + 450 >= rwhrposition ){
         rwhr.style.visibility = 'visible';
         rwhr.classList.add('slideright');
-    } else {}
-    // if ( window.pageYOffset > 113 ) {
-    //     rwhr.style.visibility = 'visible';
-    //     rwhr.classList.add('slideright');
-    // } else {}
-    if ( document.body.scrollTop > 1430 || document.documentElement.scrollTop > 1430 ) {
+    }
+    if ( window.pageYOffset + 450 >= srhrposition ){
         srhr.style.visibility = 'visible';
         srhr.classList.add('slideright');
-    } else {}
+    }
+    if ( window.pageYOffset + 440 >= furnix1position ) {
+        furnix[0].classList.add('slideup');
+        furnix[0].style.visibility = 'visible';
+        projectinfo[0].style.visibility = 'visible';
+    }
+    if ( window.pageYOffset + 440 >= furnix2position ) {
+        furnix[1].classList.add('slideup');
+        furnix[1].style.visibility = 'visible';
+        projectinfo[1].style.visibility = 'visible';
+    }
+    if ( window.pageYOffset + 440 >= furnix3position ) {
+        furnix[2].classList.add('slideup');
+        furnix[2].style.visibility = 'visible';
+        projectinfo[2].style.visibility = 'visible';
+    }
+    if ( window.pageYOffset + 440 >= furnix4position ) {
+        furnix[3].classList.add('slideup');
+        furnix[3].style.visibility = 'visible';
+        projectinfo[2].style.visibility = 'visible';
+    }
 })
 }
 
