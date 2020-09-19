@@ -134,39 +134,23 @@
 
     .furnix:hover{
         background: black;
-        border: 2px solid white;
-    }
-
-    .furnix:active{
-        box-shadow: 2px 2px white;
     }
 
     .rotate-div1{
         box-sizing: border-box;
-        width: 200px;
-        height: 270px;
+        width: 150px;
+        height: 312px;
         margin: 0 auto;
-        top: 30px;
-        left: 70px;
+        top: -6px;
+        left: 125px;
         background-color: white;
-        transform: rotate(7deg);
         position: absolute;
         border: 0.5px solid grey;
         z-index: -1;
     }
-    
-    .rotate-div2{
-        box-sizing: border-box;
-        width: 200px;
-        height: 270px;
-        margin: 0 auto;
-        top: 30px;
-        left: 70px;
-        background-color: white;
-        transform: rotate(4deg);
-        position: absolute;
-        border: 0.5px solid grey;
-        z-index: -1;
+
+    .furnix:active{
+        outline: 2px solid grey;
     }
     
     #services-container{
@@ -487,34 +471,21 @@
 
     .rotate-div1{
         box-sizing: border-box;
-        width: 200px;
-        height: 270px;
+        width: 140px;
+        height: 301px;
         margin: 0 auto;
-        top: 25px;
-        left: 60px;
+        top: -6px;
+        left: 125px;
         background-color: white;
-        transform: rotate(7deg);
         position: absolute;
         border: 0.5px solid grey;
         z-index: -1;
     }
-    
-    .rotate-div2{
-        box-sizing: border-box;
-        width: 200px;
-        height: 270px;
-        margin: 0 auto;
-        top: 23px;
-        left: 60px;
-        background-color: white;
-        transform: rotate(4deg);
-        position: absolute;
-        border: 0.5px solid grey;
-        z-index: -1;
+
+    .furnix:active{
+        outline: 2px solid grey;
     }
 }
-
-
 
 
 
@@ -549,30 +520,19 @@
 
     .rotate-div1{
         box-sizing: border-box;
-        width: 200px;
-        height: 270px;
+        width: 130px;
+        height: 291px;
         margin: 0 auto;
-        top: 15px;
-        left: 50px;
+        top: -6px;
+        left: 125px;
         background-color: white;
-        transform: rotate(7deg);
         position: absolute;
         border: 0.5px solid grey;
         z-index: -1;
     }
-    
-    .rotate-div2{
-        box-sizing: border-box;
-        width: 200px;
-        height: 270px;
-        margin: 0 auto;
-        top: 12px;
-        left: 50px;
-        background-color: white;
-        transform: rotate(4deg);
-        position: absolute;
-        border: 0.5px solid grey;
-        z-index: -1;
+
+    .furnix:active{
+        outline: 2px solid grey;
     }
 
     @keyframes mypicsmove {
@@ -704,32 +664,20 @@
 
         .rotate-div1{
             box-sizing: border-box;
-            width: 200px;
-            height: 260px;
+            width: 120px;
+            height: 281px;
             margin: 0 auto;
-            top: 12px;
-            left: 40px;
+            top: -6px;
+            left: 125px;
             background-color: white;
-            transform: rotate(7deg);
             position: absolute;
             border: 0.5px solid grey;
             z-index: -1;
         }
-        
-        .rotate-div2{
-            box-sizing: border-box;
-            width: 200px;
-            height: 260px;
-            margin: 0 auto;
-            top: 10px;
-            left: 40px;
-            background-color: white;
-            transform: rotate(4deg);
-            position: absolute;
-            border: 0.5px solid grey;
-            z-index: -1;
+    
+        .furnix:active{
+            outline: 2px solid grey;
         }
-        
         
         .uw{
             width: 30%;
@@ -748,5 +696,14 @@
         #type{
             font-size: 1rem;
         }
+    }
+}
+
+
+@media screen and (max-width: 344px){
+    .rw, .serv{
+        font-size: 1.3rem;
+        width: 50%;
+        background-color: black;
     }
 }

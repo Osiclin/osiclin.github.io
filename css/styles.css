@@ -358,39 +358,24 @@ footer>p{
 
 .rotate-div1{
     box-sizing: border-box;
-    width: 200px;
-    height: 270px;
+    width: 150px;
+    height: 311px;
     margin: 0 auto;
-    top: 30px;
-    left: 70px;
+    top: -5px;
+    left: 125px;
     background-color: white;
-    transform: rotate(7deg);
     position: absolute;
     border: 0.5px solid grey;
     z-index: -1;
 }
 
-.rotate-div2{
-    box-sizing: border-box;
-    width: 200px;
-    height: 270px;
-    margin: 0 auto;
-    top: 30px;
-    left: 70px;
-    background-color: white;
-    transform: rotate(4deg);
-    position: absolute;
-    border: 0.5px solid grey;
-    z-index: -1;
-}
 
 .furnix:hover{
     background: black;
-    outline: 0.5px solid turquoise;
 }
 
 .furnix:active{
-    transform: translateX(50px);
+    outline: 2px solid grey;
 }
 
 .uw{
