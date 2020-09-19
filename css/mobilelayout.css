@@ -114,8 +114,7 @@
     }
 
     .project-container{
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: auto;
         background: linear-gradient(transparent, turquoise, transparent, rgba(60, 60, 179, 0.589), transparent);
     }
 
@@ -127,7 +126,6 @@
     }
 
     .furnix{
-        box-shadow: 10px 10px white;
         width: 270px;
         height: 300px;
         margin: 0 auto 15px;
@@ -137,11 +135,38 @@
     .furnix:hover{
         background: black;
         border: 2px solid white;
-        box-shadow: 10px 10px hsl(175, 49%, 44%);
     }
 
     .furnix:active{
         box-shadow: 2px 2px white;
+    }
+
+    .rotate-div1{
+        box-sizing: border-box;
+        width: 200px;
+        height: 270px;
+        margin: 0 auto;
+        top: 30px;
+        left: 70px;
+        background-color: white;
+        transform: rotate(7deg);
+        position: absolute;
+        border: 0.5px solid grey;
+        z-index: -1;
+    }
+    
+    .rotate-div2{
+        box-sizing: border-box;
+        width: 200px;
+        height: 270px;
+        margin: 0 auto;
+        top: 30px;
+        left: 70px;
+        background-color: white;
+        transform: rotate(4deg);
+        position: absolute;
+        border: 0.5px solid grey;
+        z-index: -1;
     }
     
     #services-container{
@@ -249,7 +274,7 @@
 
 @keyframes slideup {
     0% {
-        opacity: 0;
+        opacity: 1;
         -webkit-transform: translateY(50%);
     } 
 
@@ -261,7 +286,7 @@
     
     @-webkit-keyframes slideup {
         0% {
-        opacity: 0;
+        opacity: 1;
         -webkit-transform: translateY(50%);
         } 
 
@@ -455,13 +480,43 @@
         
     }
 
+    .furnix{
+        width: 260px;
+        height: 290px;
+    }
+
+    .rotate-div1{
+        box-sizing: border-box;
+        width: 200px;
+        height: 270px;
+        margin: 0 auto;
+        top: 25px;
+        left: 60px;
+        background-color: white;
+        transform: rotate(7deg);
+        position: absolute;
+        border: 0.5px solid grey;
+        z-index: -1;
+    }
+    
+    .rotate-div2{
+        box-sizing: border-box;
+        width: 200px;
+        height: 270px;
+        margin: 0 auto;
+        top: 23px;
+        left: 60px;
+        background-color: white;
+        transform: rotate(4deg);
+        position: absolute;
+        border: 0.5px solid grey;
+        z-index: -1;
+    }
 }
 
-.furnix{
-    box-shadow: 10px 10px white;
-    width: 260px;
-    height: 290px;
-}
+
+
+
 
 @media screen and (max-width: 375px){
     .phone .fa-phone-square-alt, .phone .fa-twitter-square, .phone .fa-facebook-square, .phone .fa-instagram-square, .phone .fa-at{
@@ -488,9 +543,36 @@
     }
 
     .furnix{
-        box-shadow: 10px 10px white;
         width: 250px;
         height: 280px;
+    }
+
+    .rotate-div1{
+        box-sizing: border-box;
+        width: 200px;
+        height: 270px;
+        margin: 0 auto;
+        top: 15px;
+        left: 50px;
+        background-color: white;
+        transform: rotate(7deg);
+        position: absolute;
+        border: 0.5px solid grey;
+        z-index: -1;
+    }
+    
+    .rotate-div2{
+        box-sizing: border-box;
+        width: 200px;
+        height: 270px;
+        margin: 0 auto;
+        top: 12px;
+        left: 50px;
+        background-color: white;
+        transform: rotate(4deg);
+        position: absolute;
+        border: 0.5px solid grey;
+        z-index: -1;
     }
 
     @keyframes mypicsmove {
@@ -615,11 +697,39 @@
         }
 
         .furnix{
-            box-shadow: 10px 10px white;
             width: 240px;
             height: 270px;
             position: relative;
         }
+
+        .rotate-div1{
+            box-sizing: border-box;
+            width: 200px;
+            height: 260px;
+            margin: 0 auto;
+            top: 12px;
+            left: 40px;
+            background-color: white;
+            transform: rotate(7deg);
+            position: absolute;
+            border: 0.5px solid grey;
+            z-index: -1;
+        }
+        
+        .rotate-div2{
+            box-sizing: border-box;
+            width: 200px;
+            height: 260px;
+            margin: 0 auto;
+            top: 10px;
+            left: 40px;
+            background-color: white;
+            transform: rotate(4deg);
+            position: absolute;
+            border: 0.5px solid grey;
+            z-index: -1;
+        }
+        
         
         .uw{
             width: 30%;

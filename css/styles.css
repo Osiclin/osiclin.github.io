@@ -329,7 +329,8 @@ footer>p{
     background: linear-gradient(transparent, transparent, turquoise, rgba(81, 165, 243, 0.589), transparent);
     width: 100%;
     margin-top: 2%;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .projectinfo{
@@ -343,11 +344,11 @@ footer>p{
     margin-top: 5%;
     display: flex;
     flex-direction: column; 
+    position: relative;
 }
 
 .furnix{
     box-sizing: border-box;
-    box-shadow: 10px 10px white;
     width: 270px;
     height: 300px;
     margin: 0 auto 15px;
@@ -355,14 +356,41 @@ footer>p{
     position: relative;
 }
 
+.rotate-div1{
+    box-sizing: border-box;
+    width: 200px;
+    height: 270px;
+    margin: 0 auto;
+    top: 30px;
+    left: 70px;
+    background-color: white;
+    transform: rotate(7deg);
+    position: absolute;
+    border: 0.5px solid grey;
+    z-index: -1;
+}
+
+.rotate-div2{
+    box-sizing: border-box;
+    width: 200px;
+    height: 270px;
+    margin: 0 auto;
+    top: 30px;
+    left: 70px;
+    background-color: white;
+    transform: rotate(4deg);
+    position: absolute;
+    border: 0.5px solid grey;
+    z-index: -1;
+}
+
 .furnix:hover{
     background: black;
-    border: 2px solid white;
-    box-shadow: 5px 5px turquoise;
+    outline: 0.5px solid turquoise;
 }
 
 .furnix:active{
-    box-shadow: 2px 2px white;
+    transform: translateX(50px);
 }
 
 .uw{
