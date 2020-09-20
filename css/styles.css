@@ -238,7 +238,7 @@ main{
 }
 
 .aaaaa{
-    background-color: turquoise;
+    background-color: rgb(64, 224, 208);
     border-radius: 50%;
     width: 270px;
     height: 270px;
@@ -498,7 +498,7 @@ footer>p{
         width: 130%;
         height: 100%;
         border-radius: 50%;
-        background-color: rgba(81, 165, 243, 0.589);
+        background-color: rgb(0, 124, 255);
         position: absolute;
         bottom: -5px;
         left: -30px;
