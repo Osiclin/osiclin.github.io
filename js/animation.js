@@ -26,6 +26,29 @@ function closeNav() {
 
 $('main').on('click', closeNav);
 
+
+var sarrow = document.getElementById('sarrow');
+var marrow = document.getElementById('marrow');
+var larrow = document.getElementById('larrow');
+
+
+sarrow.style.visibility = 'hidden';
+marrow.style.visibility = 'hidden';
+larrow.style.visibility = 'hidden';
+function animateArrow() {
+    setTimeout(function() {sarrow.style.visibility = 'visible'}, 1500);
+    setTimeout(function() {marrow.style.visibility = 'visible'}, 2000);
+    setTimeout(function() {larrow.style.visibility = 'visible'}, 2500);
+    // hides arrows after display
+    setTimeout(function() {sarrow.style.visibility = 'hidden'}, 4500);
+    setTimeout(function() {marrow.style.visibility = 'hidden'}, 4500);
+    setTimeout(function() {larrow.style.visibility = 'hidden'}, 4500);
+    setTimeout(function() {animateArrow()}, 10000);
+}
+
+animateArrow();
+
+
 var furnix = document.getElementsByClassName('furnix');
 var furnix1 = document.getElementsByClassName('project-block');
 var rwhr = document.getElementById('rwhr');
@@ -40,7 +63,6 @@ var furnix2position = furnix1[1].offsetTop;
 var furnix3position = furnix1[2].offsetTop;
 var furnix4position = furnix1[3].offsetTop;
 
-console.log(furnix2position)
 
 for (i = 0; i < furnix.length; i++){
     furnix[i].style.visibility = 'hidden';
