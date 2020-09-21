@@ -40,10 +40,10 @@ function animateArrow() {
     setTimeout(function() {marrow.style.visibility = 'visible'}, 2000);
     setTimeout(function() {larrow.style.visibility = 'visible'}, 2500);
     // hides arrows after display
-    setTimeout(function() {sarrow.style.visibility = 'hidden'}, 4500);
-    setTimeout(function() {marrow.style.visibility = 'hidden'}, 4500);
-    setTimeout(function() {larrow.style.visibility = 'hidden'}, 4500);
-    setTimeout(function() {animateArrow()}, 10000);
+    setTimeout(function() {sarrow.style.visibility = 'hidden'}, 5000);
+    setTimeout(function() {marrow.style.visibility = 'hidden'}, 5000);
+    setTimeout(function() {larrow.style.visibility = 'hidden'}, 5000);
+    setTimeout(function() {animateArrow()}, 5000);
 }
 
 animateArrow();
