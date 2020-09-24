@@ -348,6 +348,7 @@ footer>p{
 }
 
 .furnix{
+    border-radius: 0px 10px 10px 0px;
     box-sizing: border-box;
     width: 270px;
     height: 300px;

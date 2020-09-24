@@ -1,10 +1,20 @@
-$('.aaa').hide().delay(600).fadeIn(1000);
-$('.aaaa').hide().delay(400).fadeIn(1000);
-$('.aaaaa').hide().fadeIn(500);
-$('.mypics').hide().delay(1000).fadeIn(1500);
-$('.msg1').hide().delay(300).slideDown(500);
-$('.msg2').hide().delay(500).slideDown(600);
-$('.msg3').hide().delay(700).slideDown(700);
+$('.aaa').css('visibility', 'hidden');
+$('.aaaa').css('visibility', 'hidden');
+$('.aaaaa').css('visibility', 'hidden');
+$('.mypics').css('visibility', 'hidden');
+$('.msg1').css('visibility', 'hidden');
+$('.msg2').css('visibility', 'hidden');
+$('.msg3').css('visibility', 'hidden')
+
+window.addEventListener("load", () => {
+    $('.aaa').css('visibility', 'visible');
+    $('.aaaa').css('visibility', 'visible');
+    $('.aaaaa').css('visibility', 'visible');
+    $('.mypics').css('visibility', 'visible').hide().delay(1000).fadeIn(1000);
+    $('.msg1').css('visibility', 'visible').delay(300).slideDown(500);
+    $('.msg2').css('visibility', 'visible').delay(500).slideDown(600);
+    $('.msg3').css('visibility', 'visible').delay(700).slideDown(700);
+});
 
 
 $('.mbutton').on('click', function() {
