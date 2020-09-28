@@ -326,7 +326,7 @@ footer>p{
 
 /*portfolio*/
 .project-container{
-    background: linear-gradient(transparent, transparent, turquoise, rgba(81, 165, 243, 0.589), transparent);
+    /* background: linear-gradient(transparent, transparent, turquoise, rgba(81, 165, 243, 0.589), transparent); */
     width: 100%;
     margin-top: 2%;
     display: grid;
@@ -337,6 +337,8 @@ footer>p{
     width: 70%;
     text-align: center;
     margin: 0 auto;
+    font-family: 'Abhaya Libre', serif;
+
 }
 
 .project-block{
@@ -364,9 +366,8 @@ footer>p{
     margin: 0 auto;
     top: -5px;
     left: 125px;
-    background-color: white;
+    background: linear-gradient(turquoise, rgba(81, 165, 243, 0.589), transparent);
     position: absolute;
-    border: 0.5px solid grey;
     z-index: -1;
 }
 

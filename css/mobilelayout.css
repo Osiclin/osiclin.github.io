@@ -115,7 +115,7 @@
 
     .project-container{
         grid-template-columns: auto;
-        background: linear-gradient(transparent, turquoise, transparent, rgba(60, 60, 179, 0.589), transparent);
+        /* background: linear-gradient(transparent, turquoise, transparent, rgba(60, 60, 179, 0.589), transparent); */
     }
 
     .projectinfo{
@@ -143,9 +143,8 @@
         margin: 0 auto;
         top: -6px;
         left: 125px;
-        background-color: white;
+        background: linear-gradient(turquoise, rgba(81, 165, 243, 0.589),transparent);
         position: absolute;
-        border: 0.5px solid grey;
         z-index: -1;
     }
 
@@ -474,9 +473,7 @@
         margin: 0 auto;
         top: -6px;
         left: 125px;
-        background-color: white;
         position: absolute;
-        border: 0.5px solid grey;
         z-index: -1;
     }
 
@@ -523,9 +520,7 @@
         margin: 0 auto;
         top: -6px;
         left: 125px;
-        background-color: white;
         position: absolute;
-        border: 0.5px solid grey;
         z-index: -1;
     }
 
@@ -667,9 +662,7 @@
             margin: 0 auto;
             top: -6px;
             left: 125px;
-            background-color: white;
             position: absolute;
-            border: 0.5px solid grey;
             z-index: -1;
         }
     
