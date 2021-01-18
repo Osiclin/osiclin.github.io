@@ -115,7 +115,7 @@
 
     .project-container{
         grid-template-columns: auto;
-        /* background: linear-gradient(transparent, turquoise, transparent, rgba(60, 60, 179, 0.589), transparent); */
+        width: 100%;
     }
 
     .projectinfo{
@@ -173,9 +173,7 @@
         border-radius: 50%;
         position: absolute;
         top: 140px;
-        left: 155px;
-        border: 2px solid black;
-        
+        left: 155px;        
     }
 
     @keyframes mypicsmove {
@@ -417,7 +415,6 @@
         position: absolute;
         top: 140px;
         left: 125px;
-        border: 2px solid black;
     }
 
     @keyframes mypicsmove {
@@ -505,7 +502,6 @@
         position: absolute;
         top: 128px;
         left: 100px;
-        border: 2px solid black;
     }
 
     .furnix{
@@ -605,7 +601,6 @@
             position: absolute;
             top: 120px;
             left: 90px;
-            border: 2px solid black;
         }
 
         @keyframes mypicsmove {
