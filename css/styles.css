@@ -192,7 +192,6 @@ main{
     position: absolute;
     top: 142px;
     left: 180px;
-    
     z-index: 3;
     animation: mypicsmove 10s infinite;
 }
@@ -326,7 +325,6 @@ footer>p{
 
 /*portfolio*/
 .project-container{
-    /* background: linear-gradient(transparent, transparent, turquoise, rgba(81, 165, 243, 0.589), transparent); */
     width: 90%;
     margin-top: 2%;
     display: grid;
@@ -338,7 +336,6 @@ footer>p{
     text-align: center;
     margin: 0 auto 50px;
     font-family: 'Abhaya Libre', serif;
-
 }
 
 .project-block{
@@ -369,16 +366,12 @@ footer>p{
     left: 125px;
     background: linear-gradient(turquoise, rgba(81, 165, 243, 0.589), transparent);
     position: absolute;
-    z-index: -1;
+    z-index: -5;
 }
 
 
 .furnix:hover{
     background: black;
-}
-
-.furnix:active{
-    outline: 2px solid grey;
 }
 
 .uw{
