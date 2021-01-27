@@ -127,3 +127,31 @@ window.addEventListener('scroll', () => {
     
 })
 };
+
+
+//change theme
+// const toggle = document.getElementById('toggle');
+// const msg = document.getElementById('msg');
+// const toggleSwitch = document.getElementById('toggle-switch');
+// const body = document.getElementsByTagName('body');
+
+// toggle.addEventListener('click',()=>{
+//     if(toggle.className == 'toggle-white'){
+//         toggle.classList.remove('toggle-white');
+//         toggleSwitch.classList.remove('toggle-switch-black');
+//         toggle.classList.add('toggle-black');
+//         toggleSwitch.classList.add('toggle-switch-white');
+//         body[0].style.backgroundColor = "skyblue";
+//         body[0].style.color = "black";
+//         msg.style.color = "black";
+//     }
+//     else{
+//         toggle.classList.remove('toggle-black');
+//         toggleSwitch.classList.remove('toggle-switch-white');
+//         toggle.classList.add('toggle-white');
+//         toggleSwitch.classList.add('toggle-switch-black');
+//         body[0].style.backgroundColor = "black";
+//         body[0].style.color = "white";
+//         msg.style.color = "white";
+//     }
+// }, false);

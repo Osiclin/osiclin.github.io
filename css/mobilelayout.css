@@ -389,16 +389,12 @@
     
     footer{
         font-size: .9rem;
-        width: 100%;
+        width: 90%;
         margin-top: 50px;
         bottom: unset;
         min-width: unset;
-        text-align: centre;
     }
 
-    footer>p{
-        width: 40%;
-    }
 }
 
 @media screen and (max-width: 425px){
