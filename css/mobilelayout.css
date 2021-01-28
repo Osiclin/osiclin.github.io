@@ -157,7 +157,7 @@
     }
 
     .service-block{
-        width: 80%;
+        width: 70%;
         margin-bottom: 30px;
     }
 
@@ -687,5 +687,10 @@
         font-size: 1.3rem;
         width: 50%;
         background-color: black;
+    }
+
+    .service-block{
+        width: 80%;
+        margin-bottom: 30px;
     }
 }
