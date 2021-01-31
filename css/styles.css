@@ -10,7 +10,7 @@ body{
     min-height: 100%;
     min-width: 1000px;
     max-width: 1366px;
-    width: 80%;
+    width: 100%;
     background-color: black;
     scroll-behavior: smooth;
     position: relative;
@@ -31,7 +31,7 @@ header{
     z-index: 500;
 }
 
-.sname{
+#sname{
     position: absolute;
     top: 0%;
     line-height: 40px;
@@ -62,11 +62,12 @@ header{
     display: none;
     text-align: center;
   }
+
   
   /* Style navigation menu links */
   .topnav a {
     color: turquoise;
-    padding: 10px 10px;
+    padding: 8px 10px;
     text-decoration: none;
     font-size: 1.2rem;
     display: block;
@@ -76,9 +77,10 @@ header{
   .topnav a.icon {
     display: block;
     position: absolute;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     right: 0;
-    top: 0;
+    top: -11px;
+    padding-bottom: 3px;
   }
   
   /* Add a grey background color on mouse-over */
@@ -112,10 +114,15 @@ nav{
     text-decoration: none;
 }
 
-.phone .fa-phone-square-alt, .phone .fa-twitter-square, .phone .fa-facebook-square, .phone .fa-instagram-square, .phone .fa-at{
+.fas, .fab{
     color: turquoise;
     margin-bottom: 5px;
 }
+
+.fas1, .fab1{
+    color: black;
+}
+
 
 ul li.active a{
     color: turquoise;
@@ -168,8 +175,9 @@ a.nav-link:active{
 
 /*content of page*/
 main{
-    width: 100%;
+    width: 80%;
     position: relative;
+    margin: 0 auto;
 }
 
 .phone {
@@ -179,10 +187,25 @@ main{
     font-size: 1.2rem;
 }
 
-.gifcode{
+#texttype{
+    font-family:monospace;
+    font-weight: lighter;
+    line-height: 20px;
     max-width: 100%;
-    margin-top: 30px;
-    margin-left: 120px;
+    margin-left: 164px;
+    padding-top: 100px;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+#surface{
+    background-color: rgb(46, 45, 45);
+    border-radius: 50%;
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    top: 410px;
+    left: 283px;
 }
 
 .mypics{
@@ -190,18 +213,18 @@ main{
     width: 230px;
     border-radius: 50%;
     position: absolute;
-    top: 142px;
-    left: 180px;
+    top: 182px;
+    left: 220px;
     z-index: 3;
     animation: mypicsmove 10s infinite;
 }
 
 @keyframes mypicsmove {
-    50% {top: 133px;}  
+    50% {top: 176px;}  
      
 }
 
-#myname{
+.myname{
     animation: name 10s infinite;
     transition: 2s;
 }
@@ -214,12 +237,25 @@ main{
     100% {color: white}
 }
 
-/* .toggle-white{
+.myname1{
+    animation: name1 10s infinite;
+    transition: 2s;
+}
+
+@keyframes name1 {
+    0% {color: white}
+    25% {color: rgb(39, 39, 39)}
+    50% {color: rgb(0, 0, 0)}
+    75% {color: rgb(39, 39, 39)}
+    100% {color: white}
+}
+
+.toggle-white{
     padding: 2px;
     width: 40px;
     height: 20px;
     border-radius: 20px;
-    background-color: white;
+    background-color: #e6e2c8;
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -244,7 +280,8 @@ main{
     position: fixed;
     bottom: 50px;
     right: 50px;
-} */
+    z-index: 10;
+}
 
 .toggle-switch-white{
     background-color: white;
@@ -354,7 +391,7 @@ footer{
     font-size: 1rem;
     margin-top: 50px;
     color: black;
-    text-align: end;
+    text-align: center;
 }
 
 footer>p{
@@ -386,7 +423,9 @@ footer>p{
 }
 
 .furnix{
-    border-radius: 0px 10px 10px 0px;
+    
+    box-shadow: 0.001px 0.001px 9px 0.001px turquoise;
+    border-radius: 10px;
     box-sizing: border-box;
     width: 260px;
     height: 300px;
@@ -410,24 +449,24 @@ footer>p{
 
 
 .furnix:hover{
-    background: black;
+    transform: scale(0.98);
 }
 
 .uw{
-    width: 9%;
     font-size: 1.5rem;
     color: white;
-    position: absolute;
-    top: 10px;
-    left: 120px;
+    float: right;
+    padding: 10px 10px 0px 0px;
     font-family: 'Fredericka the Great', cursive;
 }
 
 .tools{
-    color: white;
+    background-color: white;
+    padding: 0px 5px;
+    color: black;
     position: absolute;
-    top: 90%;
-    left: 10%;
+    top: 88%;
+    text-align: center;
     font-family: 'Alegreya', serif;
 }
 
@@ -448,8 +487,23 @@ footer>p{
     position: relative;
 }
 
+.service-block-theme{
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 24%;
+    padding: 14px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+
 .service-head{
     text-align: end;
+    color: turquoise;
+}
+
+.service-head-theme{
+    color: black;
 }
 
 .icon-s{
@@ -457,6 +511,14 @@ footer>p{
     left: 15px;
     top: -20px;
     background-color: black;
+    padding: 0px 5px;
+}
+
+.icon-s-theme{
+    position: absolute;
+    left: 15px;
+    top: -20px;
+    background-color: #e6e2c8;
     padding: 0px 5px;
 }
 

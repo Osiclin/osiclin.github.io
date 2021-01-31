@@ -53,7 +53,7 @@
         display: none;
     }
 
-    .sname{
+    #sname{
         position: absolute;
         top: 60px;
         line-height: 30px;
@@ -161,10 +161,8 @@
         margin-bottom: 30px;
     }
 
-    .gifcode{
-        width: 300px;
-        margin-top: 20px;
-        margin-left: 90px;
+    #texttype{
+        margin-left: 110px;
     }
     
     .mypics{
@@ -172,12 +170,57 @@
         width: 200px;
         border-radius: 50%;
         position: absolute;
-        top: 140px;
-        left: 155px;        
+        top: 200px;
+        left: 190px;        
+    }
+
+    #surface{
+        top: 400px;
+        left: 242px;
+    }
+
+    .toggle-white{
+        padding: 2px;
+        width: 40px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: #e6e2c8;
+        position: fixed;
+        top: 8px;
+        left: 10px;
+        z-index: 10;
+    }
+    
+    .toggle-switch-black{
+        background-color: black;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        
+    }
+    
+    .toggle-black{
+        border: 2px solid white;
+        padding: 2px;
+        width: 40px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: black;
+        position: fixed;
+        top: 8px;
+        left: 10px;
+    }
+    
+    .toggle-switch-white{
+        background-color: white;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        float: right;
     }
 
     @keyframes mypicsmove {
-        50% {top: 134px;}  
+        50% {top: 196px;}  
          
     }
 
@@ -380,11 +423,8 @@
     }
 
     .uw{
-        width: 30%;
         font-size: 1.5rem;
         color: white;
-        position: absolute;
-        left: 48%;
     }
     
     footer{
@@ -398,10 +438,9 @@
 }
 
 @media screen and (max-width: 425px){
-    .gifcode{
+    #texttype{
         width: 300px;
-        margin-top: 20px;
-        margin-left: 60px;
+        margin-left: 80px;
     }
     
     .mypics{
@@ -409,12 +448,17 @@
         width: 200px;
         border-radius: 50%;
         position: absolute;
-        top: 140px;
-        left: 125px;
+        top: 180px;
+        left: 145px;
+    }
+
+    #surface{
+        top: 380px;
+        left: 194px;
     }
 
     @keyframes mypicsmove {
-        50% {top: 134px;}  
+        50% {top: 174px;}  
          
     }
 
@@ -485,10 +529,9 @@
         font-size: 1.5rem;
     }
 
-    .gifcode{
+    #texttype{
         width: 250px;
-        margin-top: 20px;
-        margin-left: 50px;
+        margin-left: 70px;
     }
     
     .mypics{
@@ -496,8 +539,13 @@
         width: 190px;
         border-radius: 50%;
         position: absolute;
-        top: 128px;
-        left: 100px;
+        top: 178px;
+        left: 130px;
+    }
+
+    #surface{
+        top: 370px;
+        left: 174px;
     }
 
     .furnix{
@@ -521,7 +569,7 @@
     }
 
     @keyframes mypicsmove {
-        50% {top: 122px;}  
+        50% {top: 174px;}  
     }
 
     .aaa{
@@ -561,12 +609,8 @@
     }
 
     .uw{
-        width: 30%;
         font-size: 1.4rem;
         color: white;
-        position: absolute;
-        top: 0%;
-        left: 48%;
     }
 
 
@@ -584,10 +628,10 @@
             padding-right: 19px;
         }
 
-        .gifcode{
+        #texttype{
+            line-height: 18px;
             width: 230px;
-            margin-top: 20px;
-            margin-left: 40px;
+            margin-left: 68px;
         }
 
         .mypics{
@@ -595,12 +639,17 @@
             width: 160px;
             border-radius: 50%;
             position: absolute;
-            top: 120px;
-            left: 90px;
+            top: 180px;
+            left: 140px;
+        }
+
+        #surface{
+            top: 336px;
+            left: 172px;
         }
 
         @keyframes mypicsmove {
-            50% {top: 114px;}  
+            50% {top: 174px;}  
              
         }
     
@@ -611,7 +660,7 @@
             height: 180px;
             margin-top: -200px;
             position: absolute;
-            top: 308px;
+            top: 318px;
             left: 80px;
             z-index: 1;
         }
@@ -623,7 +672,7 @@
             height: 200px;
             margin-top: -200px;
             position: absolute;
-            top: 293px;
+            top: 303px;
             left: 70px;
             z-index: 1;
         }
@@ -635,7 +684,7 @@
             height: 185px;
             margin-top: -200px;
             position: absolute;
-            top: 310px;
+            top: 320px;
             left: 95px;
             
         }
@@ -662,12 +711,8 @@
         }
         
         .uw{
-            width: 30%;
             font-size: 1.3rem;
             color: white;
-            position: absolute;
-            top: 0%;
-            left: 48%;
         }
 
         #msg{
@@ -692,5 +737,30 @@
     .service-block{
         width: 80%;
         margin-bottom: 30px;
+    }
+
+    #surface{
+        top: 350px;
+        left: 160px;
+    }
+
+    .mypics{
+        background-color: black;
+        width: 160px;
+        border-radius: 50%;
+        position: absolute;
+        top: 190px;
+        left: 130px;
+    }
+
+    @keyframes mypicsmove {
+        50% {top: 184px;}  
+         
+    }
+
+    #texttype{
+        line-height: 18px;
+        width: 230px;
+        margin-left: 50px;
     }
 }
