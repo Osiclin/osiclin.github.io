@@ -8,7 +8,7 @@
 body{
     color: white;
     min-height: 100%;
-    min-width: 1000px;
+    min-width: 1366px;
     max-width: 1366px;
     width: 100%;
     background-color: black;
@@ -28,12 +28,12 @@ header{
     display: flex;
     justify-content: space-between;
     padding-top: 2px;
-    z-index: 500;
+    z-index: 5;
 }
 
 #sname{
     position: absolute;
-    top: 0%;
+    top: 0px;
     line-height: 40px;
     display: block;
     font-size: 2rem;
@@ -67,7 +67,7 @@ header{
   /* Style navigation menu links */
   .topnav a {
     color: turquoise;
-    padding: 8px 10px;
+    padding: 8px;
     text-decoration: none;
     font-size: 1.2rem;
     display: block;
@@ -77,10 +77,11 @@ header{
   .topnav a.icon {
     display: block;
     position: absolute;
-    font-size: 1.6rem;
-    right: 0;
-    top: -11px;
-    padding-bottom: 3px;
+    
+  }
+
+  .icon{
+      display: none;
   }
   
   /* Add a grey background color on mouse-over */
@@ -401,7 +402,7 @@ footer>p{
 
 /*portfolio*/
 .project-container{
-    width: 90%;
+    width: 100%;
     margin-top: 2%;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -423,7 +424,6 @@ footer>p{
 }
 
 .furnix{
-    
     box-shadow: 0.001px 0.001px 9px 0.001px turquoise;
     border-radius: 10px;
     box-sizing: border-box;

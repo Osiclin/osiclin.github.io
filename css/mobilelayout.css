@@ -20,7 +20,7 @@
     header{
         width: 100%;
         min-width: unset;
-        background-color: rgb(20, 18, 18);
+        background-color: black;
         position: fixed;
         top: 0px;
         right: unset;
@@ -37,9 +37,19 @@
 
     .topnav{
         display: block;
-        padding-right: 10px;
-        width: 100%;
+        width: 96%;
+        position: absolute;
+        left: 2%;
+        right: 2%;
+        margin: 0 auto;
+        top: 35px;
+        border-radius: 0px 0px 10px 10px;
     }
+
+.icon{
+    display: block;
+    padding-left: 6px;
+}
 
     #mobile{
         display: block;
@@ -186,9 +196,10 @@
         border-radius: 20px;
         background-color: #e6e2c8;
         position: fixed;
-        top: 8px;
-        left: 10px;
+        top: 6px;
+        right: 6px;
         z-index: 10;
+
     }
     
     .toggle-switch-black{
@@ -200,15 +211,14 @@
     }
     
     .toggle-black{
-        border: 2px solid white;
         padding: 2px;
         width: 40px;
         height: 20px;
         border-radius: 20px;
         background-color: black;
         position: fixed;
-        top: 8px;
-        left: 10px;
+        top: 6px;
+        right: 6px;
     }
     
     .toggle-switch-white{
@@ -429,7 +439,7 @@
     
     footer{
         font-size: .9rem;
-        width: 90%;
+        width: 100%;
         margin-top: 50px;
         bottom: unset;
         min-width: unset;

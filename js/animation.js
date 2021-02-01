@@ -192,7 +192,7 @@ toggle.addEventListener('click',()=>{
         if ( window.outerWidth <= 480 ) {
             header[0].style.backgroundColor = "#e6e2c8";
             topnav[0].style.backgroundColor = "black";
-            activ[0].style.backgroundColor = "#e6e2c8";
+            // activ[0].style.backgroundColor = "#e6e2c8";
         }
         hb.style.color = "black";
         hb.style.backgroundColor = "#e6e2c8";
