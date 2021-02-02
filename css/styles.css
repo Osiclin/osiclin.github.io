@@ -461,6 +461,7 @@ footer>p{
 }
 
 .tools{
+    border-radius: 0px 4px 4px 0px;
     background-color: white;
     padding: 0px 5px;
     color: black;
@@ -479,7 +480,7 @@ footer>p{
 
 .service-block{
     border-radius: 10px;
-    border: 2px solid rgb(98, 157, 206);
+    border: 2px solid rgb(27, 27, 37);
     width: 24%;
     padding: 14px;
     margin: 50px auto;

@@ -37,13 +37,11 @@
 
     .topnav{
         display: block;
-        width: 96%;
+        width: 40%;
         position: absolute;
-        left: 2%;
-        right: 2%;
-        margin: 0 auto;
-        top: 35px;
-        border-radius: 0px 0px 10px 10px;
+        
+        top: 34px;
+        border-radius: 0px 0px 10px 0px;
     }
 
 .icon{
