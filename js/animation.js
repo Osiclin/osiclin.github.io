@@ -48,6 +48,8 @@ var srhr = document.getElementById('srhr');
 var rworks = document.getElementById('rworks');
 var projectinfo = document.getElementsByClassName('projectinfo');
 var serviceBlock = document.getElementsByClassName('service-block');
+var se = document.getElementsByClassName('se');
+
 
 
 
@@ -71,7 +73,7 @@ for (i = 0; i < furnix.length; i++){
 }
 
 for (i = 0; i < serviceBlock.length; i++){
-    serviceBlock[i].style.visibility = 'hidden';
+    se[i].style.visibility = 'hidden';
 }
 rwhr.style.visibility = 'hidden';
 srhr.style.visibility = 'hidden';
@@ -111,17 +113,17 @@ window.addEventListener('scroll', () => {
     }
     if ( window.pageYOffset + 380 >= service1position ) {
         serviceBlock[0].classList.add('slideleft');
-        serviceBlock[0].style.visibility = 'visible';
+        se[0].style.visibility = 'visible';
         serviceBlock[0].style.visibility = 'visible';
     }
     if ( window.pageYOffset + 380 >= service2position ) {
         serviceBlock[1].classList.add('slideleft');
-        serviceBlock[1].style.visibility = 'visible';
+        se[1].style.visibility = 'visible';
         serviceBlock[1].style.visibility = 'visible';
     }
     if ( window.pageYOffset + 380 >= service3position ) {
         serviceBlock[2].classList.add('slideleft');
-        serviceBlock[2].style.visibility = 'visible';
+        se[2].style.visibility = 'visible';
         serviceBlock[2].style.visibility = 'visible';
     }
 })
