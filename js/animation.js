@@ -72,7 +72,7 @@ for (i = 0; i < furnix.length; i++){
     projectinfo[i].style.visibility = 'hidden';
 }
 
-for (i = 0; i < serviceBlock.length; i++){
+for (i = 0; i < se.length; i++){
     se[i].style.visibility = 'hidden';
 }
 rwhr.style.visibility = 'hidden';

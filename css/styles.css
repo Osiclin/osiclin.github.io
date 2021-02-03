@@ -523,7 +523,7 @@ footer>p{
     padding: 0px 5px;
 }
 
-/*Slide from left*/
+/*Slide up*/
 .slideup {
     animation-name: slideup;
     -webkit-animation-name: slideup;
