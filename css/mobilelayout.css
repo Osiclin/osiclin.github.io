@@ -161,6 +161,7 @@
     
     #services-container{
         flex-direction: column;
+        height: 600px;
     }
 
     .service-block{
