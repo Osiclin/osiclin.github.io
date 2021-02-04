@@ -370,6 +370,7 @@ main{
     width: 90%;
     padding-left: 4%;
     margin-top: 100px;
+    position: sticky;
 }
 
 hr{
@@ -479,20 +480,20 @@ footer>p{
 }
 
 .service-block{
-    border-radius: 10px;
-    border: 2px solid rgb(27, 27, 37);
-    width: 24%;
-    padding: 14px;
+    width: 28%;
     margin: 50px auto;
     text-align: center;
     position: relative;
 }
 
-.service-block-theme{
-    border-radius: 10px;
+.se{
     border: 2px solid rgb(27, 27, 37);
-    width: 24%;
     padding: 14px;
+    border-radius: 10px;
+}
+
+.service-block-theme{
+    width: 24%;
     margin: 50px auto;
     text-align: center;
     position: relative;

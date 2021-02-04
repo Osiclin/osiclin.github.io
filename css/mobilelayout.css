@@ -524,6 +524,10 @@
     .furnix:active{
         outline: 2px solid grey;
     }
+
+    .service-block{
+        width: 80%;
+    }
 }
 
 
@@ -620,8 +624,14 @@
         color: white;
     }
 
+    .service-block{
+        width: 80%;
+    }
 
-    @media screen and (max-width: 356px){
+}
+
+
+@media screen and (max-width: 356px){
         .phone .fa-phone-square-alt, .phone .fa-twitter-square, .phone .fa-facebook-square, .phone .fa-instagram-square, .phone .fa-at{
             color: rgb(57, 167, 158);
             margin-bottom: 0px;
@@ -730,7 +740,6 @@
         #type{
             font-size: 1rem;
         }
-    }
 }
 
 
@@ -742,8 +751,7 @@
     }
 
     .service-block{
-        width: 80%;
-        margin-bottom: 30px;
+        width: 90%;
     }
 
     #surface{
