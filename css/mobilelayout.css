@@ -410,9 +410,11 @@
     }
 
     .recentworks, #services{
-        width: 90%;
         padding-left: 6%;
         margin-top: 50px;
+        position: sticky;
+        top: 34px;
+        z-index: 5;
     }
 
     hr{
