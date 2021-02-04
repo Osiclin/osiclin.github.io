@@ -112,15 +112,15 @@ window.addEventListener('scroll', () => {
         projectinfo[3].style.visibility = 'visible';
     }
     if ( window.pageYOffset + 360 >= service1position ) {
-        serviceBlock[0].classList.add('slideleft');
+        serviceBlock[0].classList.add('slideup');
         se[0].style.visibility = 'visible';
     }
     if ( window.pageYOffset + 360 >= service2position ) {
-        serviceBlock[1].classList.add('slideleft');
+        serviceBlock[1].classList.add('slideup');
         se[1].style.visibility = 'visible';
     }
     if ( window.pageYOffset + 360 >= service3position ) {
-        serviceBlock[2].classList.add('slideleft');
+        serviceBlock[2].classList.add('slideup');
         se[2].style.visibility = 'visible';
     }
 })
