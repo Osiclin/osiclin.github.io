@@ -279,8 +279,8 @@ toggle.addEventListener('click',()=>{
         hb.style.backgroundColor = "black";
         mylinks.style.backgroundColor = "black";
         for (f = 0; f < menufont.length; f++) {
-            menufont[i].style.color = "turquoise";
-            menufont[i].style.backgroundColor = "black"
+            menufont[f].style.color = "turquoise";
+            menufont[f].style.backgroundColor = "black"
         }
     }
     
