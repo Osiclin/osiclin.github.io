@@ -8,7 +8,7 @@ $('#hb').on('click', function() {
 })
 
 
-var mylinks = document.getElementById('myLinks');
+const mylinks = document.getElementById('myLinks');
 function closeNav() {
     if ( mylinks.style.display == 'block' ) {
         $('#myLinks').slideUp(600);
@@ -185,6 +185,7 @@ const header = document.getElementsByTagName('header');
 const topnav = document.getElementsByClassName('topnav');
 const activ = document.getElementsByClassName('activ');
 
+
 toggle.addEventListener('click',()=>{
     if(toggle.className == 'toggle-white'){
         toggle.classList.remove('toggle-white');
@@ -223,11 +224,13 @@ toggle.addEventListener('click',()=>{
         myname[0].classList.add('myname1');
         if ( window.outerWidth <= 480 ) {
             header[0].style.backgroundColor = "#e6e2c8";
-            topnav[0].style.backgroundColor = "black";
+            topnav[0].style.backgroundColor = "#e6e2c8";
             activ[0].style.backgroundColor = "#e6e2c8";
+            mylinks.style.backgroundolor = "#e6e2c8";
         }
         hb.style.color = "black";
         hb.style.backgroundColor = "#e6e2c8";
+        
     }
     else{
         toggle.classList.remove('toggle-black');
@@ -271,6 +274,7 @@ toggle.addEventListener('click',()=>{
         }
         hb.style.color = "turquoise";
         hb.style.backgroundColor = "black";
+        mylinks.style.backgroundColor = "black";
     }
     
 }, false);

@@ -36,11 +36,11 @@
     }
 
     .topnav{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
         display: block;
-        width: 40%;
-        position: absolute;
-        top: 34px;
-        border-radius: 0px 0px 10px 0px;
+        z-index: 10;
     }
 
 .icon{
@@ -137,10 +137,13 @@
         height: 300px;
         margin: 0 auto 15px;
         position: relative;
+        transition: 2s;
     }
 
     .furnix:hover{
         background: black;
+        width: 264px;
+        height: 294px;
     }
 
     .rotate-div1{
@@ -187,11 +190,6 @@
     }
 
     .toggle-white{
-        padding: 2px;
-        width: 40px;
-        height: 20px;
-        border-radius: 20px;
-        background-color: #e6e2c8;
         position: fixed;
         top: 6px;
         right: 6px;
@@ -199,20 +197,7 @@
 
     }
     
-    .toggle-switch-black{
-        background-color: black;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        
-    }
-    
     .toggle-black{
-        padding: 2px;
-        width: 40px;
-        height: 20px;
-        border-radius: 20px;
-        background-color: black;
         position: fixed;
         top: 6px;
         right: 6px;
@@ -220,8 +205,6 @@
     
     .toggle-switch-white{
         background-color: white;
-        width: 20px;
-        height: 20px;
         border-radius: 50%;
         float: right;
     }
@@ -414,7 +397,7 @@
         margin-top: 50px;
         position: sticky;
         top: 34px;
-        z-index: 5;
+        z-index: 4;
     }
 
     hr{
@@ -512,6 +495,12 @@
         height: 290px;
     }
 
+    .furnix:hover{
+        background: black;
+        width: 254px;
+        height: 284px;
+    }
+
     .rotate-div1{
         box-sizing: border-box;
         width: 140px;
@@ -564,6 +553,12 @@
     .furnix{
         width: 250px;
         height: 280px;
+    }
+
+    .furnix:hover{
+        background: black;
+        width: 254px;
+        height: 274px;
     }
 
     .rotate-div1{
@@ -712,6 +707,12 @@
             width: 240px;
             height: 270px;
             position: relative;
+        }
+
+        .furnix:hover{
+            background: black;
+            width: 234px;
+            height: 264px;
         }
 
         .rotate-div1{
