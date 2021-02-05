@@ -67,6 +67,7 @@ header{
     background-color: black;
   }
 
+
   .menublock{
       display: flex;
   }
@@ -335,7 +336,15 @@ main{
     margin-left: 420px;
     font-size: 1.6rem;
     color: white;
+    animation: msg 3s;
 }
+
+@keyframes msg{
+    0% {margin-top: 10px; opacity: 0;}
+    100% {margin-top: -25px; opacity: 1;}
+}
+
+
 
 .msg1{
     margin-left: 8%;
@@ -380,8 +389,8 @@ hr{
     background-color: hsl(175, 49%, 44%);
     width: 7%;
     color: hsl(175, 49%, 44%);
-    border-radius: 10px;
-    border: 2px solid hsl(175, 49%, 44%);
+    border-radius: 5px;
+    border: 1px solid hsl(175, 49%, 44%);
     margin-top: 5px;
 }
 
@@ -437,6 +446,7 @@ footer>p{
     background: url(../images/projectbg.jpg);
     position: relative;
     background-position: right;
+    transition: 1s;
 }
 
 .rotate-div1{
@@ -453,7 +463,7 @@ footer>p{
 
 
 .furnix:hover{
-    transform: scale(0.98);
+    transform: scale(0.90);
 }
 
 .uw{
@@ -483,10 +493,11 @@ footer>p{
 }
 
 .service-block{
-    width: 30%;
+    width: 26%;
     margin: 50px auto;
     text-align: center;
     position: relative;
+    transition: 1s;
 }
 
 .se{
@@ -496,10 +507,11 @@ footer>p{
 }
 
 .service-block-theme{
-    width: 24%;
+    width: 26%;
     margin: 50px auto;
     text-align: center;
     position: relative;
+    transition: 1s;
 }
 
 .service-head{

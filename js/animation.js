@@ -184,6 +184,7 @@ const myname = document.getElementsByClassName('myname');
 const header = document.getElementsByTagName('header');
 const topnav = document.getElementsByClassName('topnav');
 const activ = document.getElementsByClassName('activ');
+const menufont = document.getElementsByClassName('menufont');
 
 
 toggle.addEventListener('click',()=>{
@@ -225,11 +226,13 @@ toggle.addEventListener('click',()=>{
         if ( window.outerWidth <= 480 ) {
             header[0].style.backgroundColor = "#e6e2c8";
             topnav[0].style.backgroundColor = "#e6e2c8";
-            activ[0].style.backgroundColor = "#e6e2c8";
-            mylinks.style.backgroundolor = "#e6e2c8";
         }
         hb.style.color = "black";
         hb.style.backgroundColor = "#e6e2c8";
+        mylinks.style.backgroundColor = "#e6e2c8";
+        for (f = 0; f < menufont.length; f++) {
+            menufont[f].style.color = "black";
+        }
         
     }
     else{
@@ -270,11 +273,13 @@ toggle.addEventListener('click',()=>{
         if ( window.outerWidth <= 480 ) {
             header[0].style.backgroundColor = "black";
             topnav[0].style.backgroundColor = "black";
-            activ[0].style.backgroundColor = "black";
         }
         hb.style.color = "turquoise";
         hb.style.backgroundColor = "black";
         mylinks.style.backgroundColor = "black";
+        for (f = 0; f < menufont.length; f++) {
+            menufont[f].style.color = "turquoise";
+        }
     }
     
 }, false);

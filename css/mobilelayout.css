@@ -137,7 +137,7 @@
         height: 300px;
         margin: 0 auto 15px;
         position: relative;
-        transition: 2s;
+        transition: 1s;
     }
 
     .furnix:hover{
@@ -354,6 +354,11 @@
         box-sizing: border-box;
         color: white;
     }
+
+    @keyframes msg{
+        0% {margin-top: 100px; opacity: 0;}
+        100% {margin-top: 80px; opacity: 1;}
+    }
     
     .msg1{
         margin-left: unset;
@@ -404,7 +409,7 @@
         background-color: hsl(175, 49%, 44%);
         width: 16%;
         color: hsl(175, 49%, 44%);
-        border: 2px solid hsl(175, 49%, 44%);
+        border: 1px solid hsl(175, 49%, 44%);
         margin-top: 5px;
     }
     
