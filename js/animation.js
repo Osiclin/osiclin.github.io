@@ -59,6 +59,7 @@ var furnix1position = furnix1[0].offsetTop;
 var furnix2position = furnix1[1].offsetTop;
 var furnix3position = furnix1[2].offsetTop;
 var furnix4position = furnix1[3].offsetTop;
+var furnix5position = furnix1[4].offsetTop;
 var service1position = serviceBlock[0].offsetTop;
 var service2position = serviceBlock[1].offsetTop;
 var service3position = serviceBlock[2].offsetTop;
@@ -111,6 +112,11 @@ window.addEventListener('scroll', () => {
         furnix[3].style.visibility = 'visible';
         projectinfo[3].style.visibility = 'visible';
     }
+    if ( window.pageYOffset + 380 >= furnix5position ) {
+        furnix1[4].classList.add('slideup');
+        furnix[4].style.visibility = 'visible';
+        projectinfo[4].style.visibility = 'visible';
+    }
     if ( window.pageYOffset + 360 >= service1position ) {
         serviceBlock[0].classList.add('slideup');
         se[0].style.visibility = 'visible';
@@ -131,12 +137,19 @@ window.addEventListener('scroll', () => {
 if ( window.outerWidth > 480 ) {
 window.addEventListener('scroll', () => {
     if ( window.pageYOffset + 300 >= rwhrposition ) {
-            for (i = 0; i < 4; i++){
+            for (i = 0; i < 5; i++){
                 furnix1[i].classList.add('slideup');
                 furnix[i].style.visibility = 'visible';
                 projectinfo[i].style.visibility = 'visible';
             }
         } else {};
+    // if ( window.pageYOffset + 200 >= rwhrposition ) {
+    //         for (i = 0; i > 3; i++){
+    //             furnix1[i].classList.add('slideup');
+    //             furnix[i].style.visibility = 'visible';
+    //             projectinfo[i].style.visibility = 'visible';
+    //         }
+    //     } else {};
     if ( window.pageYOffset + 400 >= rwhrposition ) {
         rwhr.classList.add('slideright');
         rwhr.style.visibility = 'visible';
