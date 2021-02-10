@@ -224,11 +224,14 @@ main{
     top: 182px;
     left: 220px;
     z-index: 3;
+    transition: 1s;
     animation: mypicsmove 10s infinite;
 }
 
 @keyframes mypicsmove {
-    50% {top: 176px;}  
+    0% {top: 182px;}  
+    50% {top: 176px;} 
+    100% {top: 182px;} 
      
 }
 
@@ -463,7 +466,7 @@ footer>p{
 
 
 .furnix:hover{
-    transform: scale(0.90);
+    transform: scale(0.95);
 }
 
 .uw{
@@ -481,6 +484,7 @@ footer>p{
     color: black;
     position: absolute;
     top: 88%;
+    left: -10px;
     text-align: center;
     font-family: 'Alegreya', serif;
 }
