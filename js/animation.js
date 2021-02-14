@@ -1,7 +1,3 @@
-window.addEventListener('load', () => {
-$('body').hide().fadeIn(2000);
-});
-
 $('.mbutton').on('click', function() {
     $('#rworks').slideDown()
 })
