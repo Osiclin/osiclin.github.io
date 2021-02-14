@@ -1,3 +1,5 @@
+$('body').hide().fadeIn(2000);
+
 $('.mbutton').on('click', function() {
     $('#rworks').slideDown()
 })
@@ -136,20 +138,20 @@ window.addEventListener('scroll', () => {
 // desktop effect
 if ( window.outerWidth > 480 ) {
 window.addEventListener('scroll', () => {
-    if ( window.pageYOffset + 300 >= rwhrposition ) {
-            for (i = 0; i < 5; i++){
+    if ( window.pageYOffset + 400 >= rwhrposition ) {
+            for (i = 0; i <= 2; i++){
                 furnix1[i].classList.add('slideup');
                 furnix[i].style.visibility = 'visible';
                 projectinfo[i].style.visibility = 'visible';
             }
         } else {};
-    // if ( window.pageYOffset + 200 >= rwhrposition ) {
-    //         for (i = 0; i > 3; i++){
-    //             furnix1[i].classList.add('slideup');
-    //             furnix[i].style.visibility = 'visible';
-    //             projectinfo[i].style.visibility = 'visible';
-    //         }
-    //     } else {};
+     if ( window.pageYOffset >= rwhrposition ) {
+            for (i = 3; i < 5; i++){
+                furnix1[i].classList.add('slideup');
+                furnix[i].style.visibility = 'visible';
+                projectinfo[i].style.visibility = 'visible';
+            }
+        } else {};
     if ( window.pageYOffset + 400 >= rwhrposition ) {
         rwhr.classList.add('slideright');
         rwhr.style.visibility = 'visible';
@@ -159,18 +161,12 @@ window.addEventListener('scroll', () => {
         srhr.classList.add('slideright');
         srhr.style.visibility = 'visible';
     } else {}
-    if ( window.pageYOffset + 300 >= service1position ) {
-        serviceBlock[0].classList.add('slideup');
-        se[0].style.visibility = 'visible';
-    }
-    if ( window.pageYOffset + 300 >= service2position ) {
-        serviceBlock[1].classList.add('slideup');
-        se[1].style.visibility = 'visible';
-    }
-    if ( window.pageYOffset + 300 >= service3position ) {
-        serviceBlock[2].classList.add('slideup');
-        se[2].style.visibility = 'visible';
-    }
+    if ( window.pageYOffset + 400 >= service1position ) {
+        for ( i = 0; i <= serviceBlock.length; i++) {
+            serviceBlock[i].classList.add('slideup');
+            se[i].style.visibility = 'visible';
+        }
+    } else {}
 })
 };
 
@@ -316,3 +312,5 @@ text += "&lt/head&gt <br>";
 text += "&lt/html&gt ";
 
 textType.innerHTML = text;
+
+
