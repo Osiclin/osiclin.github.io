@@ -48,11 +48,13 @@ var srhr = document.getElementById('srhr');
 var rworks = document.getElementById('rworks');
 var projectinfo = document.getElementsByClassName('projectinfo');
 var serviceBlock = document.getElementsByClassName('service-block');
+var serviceContainer = document.getElementById('services-container');
 var se = document.getElementsByClassName('se');
 
 
 
 
+var sCposition = serviceContainer.offsetTop;
 var rwhrposition = rwhr.offsetTop;
 var srhrposition = srhr.offsetTop;
 var furnix1position = furnix1[0].offsetTop;
@@ -61,6 +63,7 @@ var furnix3position = furnix1[2].offsetTop;
 var furnix4position = furnix1[3].offsetTop;
 var furnix5position = furnix1[4].offsetTop;
 var furnix6position = furnix1[5].offsetTop;
+var furnix7position = furnix1[6].offsetTop;
 var service1position = serviceBlock[0].offsetTop;
 var service2position = serviceBlock[1].offsetTop;
 var service3position = serviceBlock[2].offsetTop;
@@ -68,6 +71,7 @@ var service3position = serviceBlock[2].offsetTop;
 
 for (i = 0; i < furnix.length; i++){
     furnix[i].style.visibility = 'hidden';
+    furnix[i].style.transform = 'scale(0.5)';
 }
 
 for (i = 0; i < furnix.length; i++){
@@ -95,33 +99,38 @@ window.addEventListener('scroll', () => {
     }
     if ( window.pageYOffset + 380 >= furnix1position ) {
         furnix1[0].classList.add('slideup');
-        furnix[0].style.visibility = 'visible';
+        furnix[0].style.transform = 'scale(1)';
         projectinfo[0].style.visibility = 'visible';
     }
     if ( window.pageYOffset + 380 >= furnix2position ) {
         furnix1[1].classList.add('slideup');
-        furnix[1].style.visibility = 'visible';
+        furnix[1].style.transform = 'scale(1)';
         projectinfo[1].style.visibility = 'visible';
     }
     if ( window.pageYOffset + 380 >= furnix3position ) {
         furnix1[2].classList.add('slideup');
-        furnix[2].style.visibility = 'visible';
+        furnix[2].style.transform = 'scale(1)';
         projectinfo[2].style.visibility = 'visible';
     }
     if ( window.pageYOffset + 380 >= furnix4position ) {
         furnix1[3].classList.add('slideup');
-        furnix[3].style.visibility = 'visible';
+        furnix[3].style.transform = 'scale(1)';
         projectinfo[3].style.visibility = 'visible';
     }
     if ( window.pageYOffset + 380 >= furnix5position ) {
         furnix1[4].classList.add('slideup');
-        furnix[4].style.visibility = 'visible';
+        furnix[4].style.transform = 'scale(1)';
         projectinfo[4].style.visibility = 'visible';
     }
     if ( window.pageYOffset + 380 >= furnix6position ) {
         furnix1[5].classList.add('slideup');
-        furnix[5].style.visibility = 'visible';
+        furnix[5].style.transform = 'scale(1)';
         projectinfo[5].style.visibility = 'visible';
+    }
+    if ( window.pageYOffset + 380 >= furnix7position ) {
+        furnix1[6].classList.add('slideup');
+        furnix[6].style.transform = 'scale(1)';
+        projectinfo[6].style.visibility = 'visible';
     }
     if ( window.pageYOffset + 360 >= service1position ) {
         serviceBlock[0].classList.add('slideup');
@@ -142,17 +151,27 @@ window.addEventListener('scroll', () => {
 // desktop effect
 if ( window.outerWidth > 480 ) {
 window.addEventListener('scroll', () => {
-    if ( window.pageYOffset + 400 >= rwhrposition ) {
+    if ( window.pageYOffset + 306 >= rwhrposition ) {
             for (i = 0; i <= 2; i++){
                 furnix1[i].classList.add('slideup');
+                furnix[i].style.transform = 'scale(1)';
                 furnix[i].style.visibility = 'visible';
                 projectinfo[i].style.visibility = 'visible';
             }
         } else {};
-     if ( window.pageYOffset >= rwhrposition ) {
-            for (i = 3; i < 6; i++){
+     if ( window.pageYOffset - 100 >= rwhrposition ) {
+            for (i = 3; i <= 5; i++){
                 furnix1[i].classList.add('slideup');
+                furnix[i].style.transform = 'scale(1)';
                 furnix[i].style.visibility = 'visible';
+                projectinfo[i].style.visibility = 'visible';
+            }
+        } else {};
+     if ( window.pageYOffset >= rwhrposition + 520) {
+            for (i = 6; i <= 6; i++){
+                furnix1[i].classList.add('slideup');
+                furnix[i].style.transform = 'scale(1)';
+                furnix[i].style.visibility = "visible";
                 projectinfo[i].style.visibility = 'visible';
             }
         } else {};
@@ -165,8 +184,8 @@ window.addEventListener('scroll', () => {
         srhr.classList.add('slideright');
         srhr.style.visibility = 'visible';
     } else {}
-    if ( window.pageYOffset + 400 >= service1position ) {
-        for ( i = 0; i <= serviceBlock.length; i++) {
+    if ( window.pageYOffset + 350 >= sCposition ) {
+        for ( i = 0; i < serviceBlock.length; i++) {
             serviceBlock[i].classList.add('slideup');
             se[i].style.visibility = 'visible';
         }
