@@ -63,7 +63,7 @@ var furnix3position = furnix1[2].offsetTop;
 var furnix4position = furnix1[3].offsetTop;
 var furnix5position = furnix1[4].offsetTop;
 var furnix6position = furnix1[5].offsetTop;
-var furnix7position = furnix1[6].offsetTop;
+// var furnix7position = furnix1[6].offsetTop;
 var service1position = serviceBlock[0].offsetTop;
 var service2position = serviceBlock[1].offsetTop;
 var service3position = serviceBlock[2].offsetTop;
@@ -97,41 +97,47 @@ window.addEventListener('scroll', () => {
         srhr.classList.add('slideright');
         srhr.style.visibility = 'visible';
     }
-    if ( window.pageYOffset + 380 >= furnix1position ) {
+    if ( window.pageYOffset + 220 > furnix1position ) {
         furnix1[0].classList.add('slideup');
         furnix[0].style.transform = 'scale(1)';
+        furnix[0].style.visibility = 'visible';
         projectinfo[0].style.visibility = 'visible';
     }
-    if ( window.pageYOffset + 380 >= furnix2position ) {
+    if ( window.pageYOffset + 220 > furnix2position ) {
         furnix1[1].classList.add('slideup');
         furnix[1].style.transform = 'scale(1)';
+        furnix[1].style.visibility = 'visible';
         projectinfo[1].style.visibility = 'visible';
     }
-    if ( window.pageYOffset + 380 >= furnix3position ) {
+    if ( window.pageYOffset + 220 > furnix3position ) {
         furnix1[2].classList.add('slideup');
         furnix[2].style.transform = 'scale(1)';
+        furnix[2].style.visibility = 'visible';
         projectinfo[2].style.visibility = 'visible';
     }
-    if ( window.pageYOffset + 380 >= furnix4position ) {
+    if ( window.pageYOffset + 220 > furnix4position ) {
         furnix1[3].classList.add('slideup');
         furnix[3].style.transform = 'scale(1)';
+        furnix[3].style.visibility = 'visible';
         projectinfo[3].style.visibility = 'visible';
     }
-    if ( window.pageYOffset + 380 >= furnix5position ) {
+    if ( window.pageYOffset + 220 > furnix5position ) {
         furnix1[4].classList.add('slideup');
         furnix[4].style.transform = 'scale(1)';
+        furnix[4].style.visibility = 'visible';
         projectinfo[4].style.visibility = 'visible';
     }
-    if ( window.pageYOffset + 380 >= furnix6position ) {
+    if ( window.pageYOffset + 220 > furnix6position ) {
         furnix1[5].classList.add('slideup');
         furnix[5].style.transform = 'scale(1)';
+        furnix[5].style.visibility = 'visible';
         projectinfo[5].style.visibility = 'visible';
     }
-    if ( window.pageYOffset + 380 >= furnix7position ) {
-        furnix1[6].classList.add('slideup');
-        furnix[6].style.transform = 'scale(1)';
-        projectinfo[6].style.visibility = 'visible';
-    }
+    // if ( window.pageYOffset + 380 >= furnix7position ) {
+    //     furnix1[6].classList.add('slideup');
+    //     furnix[6].style.transform = 'scale(1)';
+    //     projectinfo[6].style.visibility = 'visible';
+    // }
     if ( window.pageYOffset + 360 >= service1position ) {
         serviceBlock[0].classList.add('slideup');
         se[0].style.visibility = 'visible';
@@ -167,14 +173,14 @@ window.addEventListener('scroll', () => {
                 projectinfo[i].style.visibility = 'visible';
             }
         } else {};
-     if ( window.pageYOffset >= rwhrposition + 520) {
-            for (i = 6; i <= 6; i++){
-                furnix1[i].classList.add('slideup');
-                furnix[i].style.transform = 'scale(1)';
-                furnix[i].style.visibility = "visible";
-                projectinfo[i].style.visibility = 'visible';
-            }
-        } else {};
+    //  if ( window.pageYOffset >= rwhrposition + 520) {
+    //         for (i = 6; i <= 6; i++){
+    //             furnix1[i].classList.add('slideup');
+    //             furnix[i].style.transform = 'scale(1)';
+    //             furnix[i].style.visibility = "visible";
+    //             projectinfo[i].style.visibility = 'visible';
+    //         }
+    //     } else {};
     if ( window.pageYOffset + 400 >= rwhrposition ) {
         rwhr.classList.add('slideright');
         rwhr.style.visibility = 'visible';
